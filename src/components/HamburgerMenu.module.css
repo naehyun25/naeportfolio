@@ -1,0 +1,23 @@
+.hamburgerWrapper{
+    width: 60px;
+    height: 60px;
+}
+.hamburgerBtn{
+    width: 50px;
+    height: 50px;
+    background-color : #525260;
+    border-style: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hamburgerBtn span{
+    display: inline-block;
+    height: 2px;
+    width: 28px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 3px auto;
+}
