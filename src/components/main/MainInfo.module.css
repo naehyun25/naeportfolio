@@ -1,0 +1,67 @@
+.MainInfoWrap{
+    padding-top:30px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 20px;
+    color:#c75c6f
+}
+.MainIntroduction>p {
+    font-size:52px;
+    letter-spacing: -1;
+    color:#292930;
+}
+.infoBoxesWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.boxWrap{
+    width:410px;
+    height: 290px;
+    border-radius: 15px;
+    background:linear-gradient(40deg,#f8f8f8,hsla(0,0%,100%,0));
+}
+.boxWrap:hover{
+    background: linear-gradient(0deg,#ecf2f6,hsla(0,0%,100%,0)),
+    linear-gradient(180deg,#f8f8f8,hsla(0,0%,100%,0));
+}
+.boxInfo{
+    margin-top:252px;
+}
+.boxHistory{
+    margin-top:96px;
+}
+.boxEducation{
+    margin-top:-30px;    
+}
+.boxTitle{
+    font-size: 22px;
+    color : #292930;
+    padding: 0 20px;
+}
+.boxWrap p{
+    padding: 0 10px;
+}
+.circleWrap{
+    position: relative;
+}
+.circleWrap img{
+    position: absolute;
+    z-index:-1;
+}
+.circleYellow{
+    top: 280px;
+    left: 1000px;
+}
+.circlePink{
+    top: 120px;
+    left: 800px;
+}
+.circlePurple{
+    top: 700px;
+    left: 100px;
+}
+/* z-index 
+btn, img, text 0
+circle -1
+*/
