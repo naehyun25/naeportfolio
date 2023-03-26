@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../components/Footer.module.css';
+import styles from './Footer.module.css';
 
 const Footer =() => {
     return(
-        <div></div>
+        <div>푸터입니다.</div>
     )
 };
 export default Footer;

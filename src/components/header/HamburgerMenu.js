@@ -1,9 +1,9 @@
 import React from "react";
-import styles from '../components/HamburgerMenu.module.css';
+import styles from './HamburgerMenu.module.css';
 
 const HamburgerMenu= () => {
     return(
-        <div className={styles.hamburgerWrapper}>
+        <div className={styles.hamburgerWrap}>
             <button className={styles.hamburgerBtn}>
                 <span/><span/><span/>
             </button>

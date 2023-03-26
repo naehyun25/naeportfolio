@@ -1,16 +1,16 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import RoutesIndex from './UI/RoutesIndex';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <div className="App">
         <Header></Header>
-        <RoutesIndex>
+        <RoutesIndex />
+        <MainPage/>
 
-
-        </RoutesIndex>
         <Footer></Footer>
     </div>
   );

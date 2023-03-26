@@ -1,10 +1,10 @@
-.hamburgerWrapper{
-    width: 60px;
-    height: 60px;
+.hamburgerWrap{
+    width: 3em;
+    height: 3em;
 }
 .hamburgerBtn{
-    width: 50px;
-    height: 50px;
+    width: 2.8em;
+    height: 2.8em;
     background-color : #525260;
     border-style: none;
     border-radius: 15px;
