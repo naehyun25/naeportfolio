@@ -2,24 +2,28 @@ import React from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import {ButtonWhite} from "../../UI/Buttons";
-import profileImg from "../../assets/profile-temp.png";
-import circleHalf from "../../assets/circle-half.png";
-import circleBlue from "../../assets/circle-blue.png";
-import circlePurple from "../../assets/circle-purple.png";
-import circleWhite from "../../assets/circle-white.png";
+// import profileImg from "../../assets/profile-temp.png";
+// import circleHalf from "../../assets/circle-half.png";
+// import circleBlue from "../../assets/circle-blue.png";
+// import circlePurple from "../../assets/circle-purple.png";
+// import circleWhite from "../../assets/circle-white.png";
 
 
 const MainIntro = () => {
     return(
         <div className={styles.mainIntroWrap}>
-            <InnerWrap>
-            <div className={styles.circleWrap}>
-                <img src={circleHalf} alt="" className={styles.static}></img>
-                <img src={circlePurple} alt="" className={styles.moving1}></img>
-                <img src={circleBlue} alt=""  className={styles.moving2}></img>
-                <img src={circleWhite} alt=""  className={styles.moving3}></img>
-                <img src={circleWhite} alt=""  className={styles.moving4}></img>
+            <div className={styles.backGroundWrap}>
+                <ul>
+                    <li className={styles.img3Dtop}></li>
+                    <li className={styles.img3Dbottom}></li>
+                    <li className={styles.static}></li>
+                    <li className={styles.moving1}></li>
+                    <li className={styles.moving2}></li>
+                    <li className={styles.moving3}></li>
+                    <li className={styles.moving4}></li>
+                </ul>
             </div>
+            <InnerWrap>
             <div className={styles.mainBanner}>
                 <div className={styles.bannerDesc}>
                     <div>
@@ -31,9 +35,7 @@ const MainIntro = () => {
                         <ButtonWhite name="이력서"></ButtonWhite>
                     </div>
                 </div>
-                <div className={styles.bannerImg}>
-                <img src={profileImg} alt="프로필이미지"></img>
-                </div>
+                <div className={styles.profileImg}></div>
 
             </div>
 

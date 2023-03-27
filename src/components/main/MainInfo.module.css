@@ -3,11 +3,11 @@
     margin: 0 auto;
 }
 h2{
-    font-size: 20px;
+    font-size: 2rem;
     color:#c75c6f
 }
 .MainIntroduction>p {
-    font-size:52px;
+    font-size:5.2rem;
     letter-spacing: -1;
     color:#292930;
 }
@@ -35,7 +35,7 @@ h2{
     margin-top:-30px;    
 }
 .boxTitle{
-    font-size: 22px;
+    font-size: 2.2rem;
     color : #292930;
     padding: 0 20px;
 }

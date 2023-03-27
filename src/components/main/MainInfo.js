@@ -22,7 +22,6 @@ const MainInfo = () => {
                         <br/>
                         맨들맨들한 성격과 소통능력을 가지고 있다.
                     </p>
-                    
                 </div>
                 <div className={styles.infoBoxesWrap}>
                     <div className={`${styles.boxWrap} ${styles.boxInfo}`}>
