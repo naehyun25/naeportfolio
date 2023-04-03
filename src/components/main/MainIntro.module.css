@@ -1,0 +1,155 @@
+/* z-index 
+back -4
+btn, text 0
+circle -3 -1
+3dimg -2
+*/
+.mainIntroWrap{
+    margin: 30px 100px 0 100px;
+    background-color: #2522BA;
+    border-radius: 15px;
+    position: relative;
+    z-index: -4;
+    height: 84vh;
+    overflow: hidden;
+}
+.mainBanner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bannerDesc{
+    width: 50%;
+    padding: 10% 0;
+}
+.bannerDesc p, span{
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+.bannerDesc p {color:#ffffff}
+.bannerDesc span {color:#badfff}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    padding: 28px;
+}
+.profileImg{
+    width: 50%;
+    position: relative;
+    bottom: 0;
+    right: 8%;
+    background: no-repeat bottom ;
+    background-size: 70%;
+}
+.backGroundWrap{
+    position: absolute;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+}
+.backGroundWrap li{
+    display: block;
+    position: absolute;
+}
+.img3Dtop{
+    z-index: -2;
+    width: 55%;
+    height: 75%;
+    background: url("../../assets/banner-shape-1.png") no-repeat;
+    left: 60%;
+    top: 0;
+}
+.img3Dbottom{
+    z-index: -2;
+    width: 33%;
+    height: 40%;
+    background: url("../../assets/banner-shape-2.png") no-repeat;
+    left:0;
+    bottom: 0;
+}
+.static{
+    z-index: -3;
+    width: 33%;
+    height: 40%;
+    background: url("../../assets/circle-half.png") no-repeat;
+    left:78%;
+    top: 0;
+}
+.moving1{
+    z-index: -3;
+    width: 8%;
+    height: 12%;
+    left:20%;
+    top: 0%;
+    background: url("../../assets/circle-blue.png") no-repeat ;
+    animation: move1 infinite ease-in-out alternate 48s;
+}
+@keyframes move1 {
+    0% {transform: translate(0,0);}
+    20% {transform: translate(500px, 100px);}
+    45% {transform: translate(1200px,550px);}
+    60% {transform: translate(-300px,600px);}
+    88% {transform: translate(0px,300px);}
+    100% {transform: translate(-200px,-100px);}
+}
+.moving2{
+    width: 8%;
+    height: 12%;
+    left:7%;
+    top:14%;
+    opacity: 0.5;
+    background: url("../../assets/circle-purple.png") no-repeat ;
+    animation: move2 44s ease-in-out 1s infinite;
+
+}
+@keyframes move2 {
+    0% {transform: translate(0,0);}
+    10% {transform: translate(50px, 460px);}
+    37% {transform: translate(600px, 600px);}
+    60% {transform: translate(450px,20px);}
+    74% {transform: translate(200px,-80px);}
+    90% {transform: translate(50px,0px);}
+    100% {transform: translate(0,0);}
+}
+.moving3{
+    z-index: -3;
+    width: 2%;
+    height: 4%;
+    left:96%;
+    top:96%;
+    background: url("../../assets/circle-white.png") no-repeat ;
+    animation: move3 40s linear infinite;
+}
+@keyframes move3 {
+    0% {transform: translate(0,0);}
+    10% {transform: translate(-140px, -250px);}
+    25% {transform: translate(-1000px,-600px);}
+    50% {transform: translate(-1580px,-720px);}
+    80% {transform: translate(-1600px,-140px);}
+    90% {transform: translate(-1100px,-120px);}
+    100% {transform: translate(0,0);}
+}
+.moving4{
+    width: 8%;
+    height: 12%;
+    left:0px;
+    top:560px;
+    opacity:0.5;
+    background: url("../../assets/circle-white.png") no-repeat ;
+    animation: move4 44s linear infinite alternate;
+}
+@keyframes move4 {
+    0% {transform: translate(0,0);}
+    25% {transform: translate(440px, -240px);}
+    50% {transform: translate(1770px,-560px);}
+    75% {transform: translate(20px,-500px);}
+    100% {transform: translate(100px,-50px);}
+}
+
+
+
+
+
+
