@@ -2,12 +2,6 @@ import React from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import {ButtonWhite} from "../../UI/Buttons";
-// import profileImg from "../../assets/profile-temp.png";
-// import circleHalf from "../../assets/circle-half.png";
-// import circleBlue from "../../assets/circle-blue.png";
-// import circlePurple from "../../assets/circle-purple.png";
-// import circleWhite from "../../assets/circle-white.png";
-
 
 const MainIntro = () => {
     return(

@@ -40,7 +40,7 @@ circle -3 -1
     position: relative;
     bottom: 0;
     right: 8%;
-    background: url(../../assets/profile-temp.png) no-repeat bottom ;
+    background: no-repeat bottom ;
     background-size: 70%;
 }
 .backGroundWrap{
