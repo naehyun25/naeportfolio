@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
+import {DonutThree} from "../../UI/MainGeometry";
 import {ButtonWhite} from "../../UI/Buttons";
 
 const MainIntro = () => {
     return(
         <div className={styles.mainIntroWrap}>
             <div className={styles.backGroundWrap}>
+                <DonutThree></DonutThree>
                 <ul>
                     <li className={styles.img3Dtop}></li>
                     <li className={styles.img3Dbottom}></li>
