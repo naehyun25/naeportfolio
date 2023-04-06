@@ -2,13 +2,17 @@ import React from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import {ButtonWhite} from "../../UI/Buttons";
+import { DonutTop, DonutBottom } from "../../UI/MainGeometry";
 
 const MainIntro = () => {
     return(
         <div className={styles.mainIntroWrap}>
             <div className={styles.backGroundWrap}>
+                <div className={styles.donutTop}>                <DonutTop/>
+                </div>
+                <div className={styles.donutBottom}>                <DonutBottom/>
+                </div>
                 <ul>
-                    <li className={styles.img3Dtop}></li>
                     <li className={styles.img3Dbottom}></li>
                     <li className={styles.static}></li>
                     <li className={styles.moving1}></li>

@@ -4,6 +4,20 @@ btn, text 0
 circle -3 -1
 3dimg -2
 */
+.donutTop{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: -14%;
+    left: 54%;
+}
+.donutBottom{
+    position: absolute;
+    width: 64%;
+    height: 64%;
+    top: 62%;
+    left: -16%;
+}
 .mainIntroWrap{
     margin: 30px 100px 0 100px;
     background-color: #2522BA;
@@ -52,14 +66,6 @@ circle -3 -1
 .backGroundWrap li{
     display: block;
     position: absolute;
-}
-.img3Dtop{
-    z-index: -2;
-    width: 55%;
-    height: 75%;
-    background: url("../../assets/banner-shape-1.png") no-repeat;
-    left: 60%;
-    top: 0;
 }
 .img3Dbottom{
     z-index: -2;
