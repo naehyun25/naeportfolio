@@ -3,6 +3,7 @@ import styles from "./MainPage.module.css"
 import MainIntro from "../components/main/MainIntro";
 import MainInfo from "../components/main/MainInfo";
 import MainProject from "../components/main/MainProject";
+import MainSkill from "../components/main/MainSkill";
 
 const MainPage = () => {
     return(
@@ -10,6 +11,7 @@ const MainPage = () => {
         <MainIntro/>
         <MainInfo/>
         <MainProject/>
+        <MainSkill/>
         </div>
     )
 };
