@@ -23,11 +23,13 @@ const Donut = () => {
                 args={[1, 0.34, 32, 100]}
                 attach="geometry"
                 />
+                {/* <octahedronGeometry/> */}
                 <meshStandardMaterial color={hovered ? '#E75D3E' : '#DC8DDA'}
                 />
             </mesh>
     )
 }
+
 
 
 const DonutThree = () => {
@@ -42,6 +44,7 @@ const DonutThree = () => {
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10,-10,-10]}/>
                 <Donut position={[40, 10, 0]}/>
+                
                 <OrbitControls/>
             </Canvas>
 

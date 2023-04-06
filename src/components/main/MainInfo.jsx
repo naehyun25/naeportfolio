@@ -16,11 +16,12 @@ const MainInfo = () => {
             <InnerWrap>
                 <div className={styles.MainIntroduction}>
                     <h2>About Me</h2>
-                    <p>윤내현의 "윤내다"
+                    {/* gsap으로 변경 */}
+                    <p>노력으로 갈고 닦아 보석처럼 빛나는 윤내현입니다.
                         <br/>
-                        노력으로 갈고 닦아 광택이 난다.
+                        매끈한 소통능력과 눈부신 코딩실력으로
                         <br/>
-                        맨들맨들한 성격과 소통능력을 가지고 있다.
+                        회사의 빛이 되겠습니다.
                     </p>
                 </div>
                 <div className={styles.infoBoxesWrap}>
