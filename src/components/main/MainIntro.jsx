@@ -1,16 +1,26 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import {ButtonWhite} from "../../UI/Buttons";
 import { DonutTop, DonutBottom } from "../../UI/MainGeometry";
+import github from "../../assets/github-icon.png";
+import notion from "../../assets/notion-icon.png";
+import resume from "../../assets/resume-icon.png";
+import githubWhite from "../../assets/github-white-icon.png";
+import notionWhite from "../../assets/notion-white-icon.png";
+import resumeWhite from "../../assets/resume-white-icon.png";
 
 const MainIntro = () => {
+    const [hover, setHover]= useState(0);
+    
     return(
         <div className={styles.mainIntroWrap}>
             <div className={styles.backGroundWrap}>
-                <div className={styles.donutTop}>                <DonutTop/>
+                <div className={styles.donutTop}>                
+                <DonutTop/>
                 </div>
-                <div className={styles.donutBottom}>                <DonutBottom/>
+                <div className={styles.donutBottom}>                
+                <DonutBottom/>
                 </div>
                 <ul>
                     <li className={styles.img3Dbottom}></li>
@@ -28,9 +38,14 @@ const MainIntro = () => {
                         <p>윤나는 코드를 만드는<br/><span>윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
-                        <ButtonWhite name="Git Hub"></ButtonWhite>
-                        <ButtonWhite name="Notion"></ButtonWhite>
-                        <ButtonWhite name="이력서"></ButtonWhite>
+                        <ButtonWhite name="Git Hub" onClick={()=>{
+                            alert("1");}}
+                          src={hover===1?  githubWhite : github}></ButtonWhite>
+                            
+                        
+                        
+                        <ButtonWhite name="Notion" src={notion}></ButtonWhite>
+                        <ButtonWhite name="이력서" src={resume}></ButtonWhite>
                     </div>
                 </div>
                 <div className={styles.profileImg}></div>

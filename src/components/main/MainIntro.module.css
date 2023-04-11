@@ -23,7 +23,7 @@ circle -3 -1
     background-color: #2522BA;
     border-radius: 15px;
     position: relative;
-    z-index: -4;
+    z-index: -10;
     height: 84vh;
     overflow: hidden;
 }
@@ -46,8 +46,9 @@ circle -3 -1
 .bannerDesc span {color:#badfff}
 .btns{
     display: flex;
-    justify-content: space-around;
-    padding: 28px;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 999;
 }
 .profileImg{
     width: 50%;
@@ -59,7 +60,7 @@ circle -3 -1
 }
 .backGroundWrap{
     position: absolute;
-    z-index:-1;
+    z-index:-9;
     width: 100%;
     height: 100%;
 }
