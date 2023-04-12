@@ -1,0 +1,32 @@
+.mainSkillWrap{
+    padding:140px 0 140px 0;
+    width: 100%;
+    background-color: #27272e;
+    background-image: url("../../assets/background-black-line.png");
+    background-repeat: no-repeat;
+    background-position-x:100%;
+    background-position-y:10%;
+    
+}
+.mainSkillTitle{
+    color : #c75c6f;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+.skillIcons{
+    display: flex;
+}
+.skillIcon{
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    transition: all 1s;
+    padding: 10px;
+}
+.skillIcon:hover{
+    filter:grayscale(0%);
+}
+.skillIcon Img{
+    width: 100%;
+}

@@ -97,12 +97,12 @@ const MainProject = () => {
                                 <div className={styles.projectDesc}>
                                     <p className={styles.projectTitle}>{data.title}</p>
                                     <p className={styles.projectContent}>{data.content}</p>
-                                    <p>제작기간 : {data.date}</p>
-                                    <p>기여도 : {data.contribution}</p>
-                                    <p>배포 :  {data.deploy}</p>
+                                    <p>제작기간  {data.date}</p>
+                                    <p>기여도  {data.contribution}</p>
+                                    <p>배포   {data.deploy}</p>
                                 </div>
                                 <div className={styles.projectSkill}>
-                                    <h3>skill <br/>{data.skill}</h3>
+                                    <p>skill <br/>{data.skill}</p>
                                     <p>기술 <br/>{data.tech}</p>
                                     <p>구현페이지<br/> {data.page}</p>
                                 </div>

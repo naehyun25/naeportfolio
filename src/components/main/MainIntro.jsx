@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import styles from "./MainIntro.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import {ButtonWhite} from "../../UI/Buttons";
-import { DonutTop, DonutBottom } from "../../UI/MainGeometry";
+import { DonutTop, DonutBottom, CornorBottom } from "../../UI/MainGeometry";
 import github from "../../assets/github-icon.png";
 import notion from "../../assets/notion-icon.png";
 import resume from "../../assets/resume-icon.png";
@@ -22,6 +22,9 @@ const MainIntro = () => {
                 <div className={styles.donutBottom}>                
                 <DonutBottom/>
                 </div>
+                {/* <div className={styles.conorBottom}>                
+                <CornorBottom/>
+                </div> */}
                 <ul>
                     <li className={styles.static}></li>
                     <li className={styles.moving1}></li>
