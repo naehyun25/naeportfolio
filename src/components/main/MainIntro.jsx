@@ -11,7 +11,7 @@ import notionWhite from "../../assets/notion-white-icon.png";
 import resumeWhite from "../../assets/resume-white-icon.png";
 
 const MainIntro = () => {
-    const [hover, setHover]= useState(0);
+
     
     return(
         <div className={styles.mainIntroWrap}>
@@ -23,7 +23,6 @@ const MainIntro = () => {
                 <DonutBottom/>
                 </div>
                 <ul>
-                    <li className={styles.img3Dbottom}></li>
                     <li className={styles.static}></li>
                     <li className={styles.moving1}></li>
                     <li className={styles.moving2}></li>
@@ -38,14 +37,9 @@ const MainIntro = () => {
                         <p>윤나는 코드를 만드는<br/><span>윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
-                        <ButtonWhite name="Git Hub" onClick={()=>{
-                            alert("1");}}
-                          src={hover===1?  githubWhite : github}></ButtonWhite>
-                            
-                        
-                        
-                        <ButtonWhite name="Notion" src={notion}></ButtonWhite>
-                        <ButtonWhite name="이력서" src={resume}></ButtonWhite>
+                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} />
+                        <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite} />
+                        <ButtonWhite name="이력서" src={resume} srcWhite={resumeWhite} />
                     </div>
                 </div>
                 <div className={styles.profileImg}></div>

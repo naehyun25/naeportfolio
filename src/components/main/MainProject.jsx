@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import styles from "./MainProject.module.css";
 import InnerWrap from "../../UI/InnerWrap";
-import project1 from "../../assets/project1.gif";
-import project2 from "../../assets/project2.gif";
-import project3 from "../../assets/project3.gif";
+import project1 from "../../assets/project1.jpg";
+import project2 from "../../assets/project2.jpg";
+import project3 from "../../assets/project3.jpg";
+import { ButtonBlue } from "../../UI/Buttons";
 
 const projectData = [
     {
         imgUrl : project1,
         title : "독립기념관 리뉴얼",
         content : "독립기념관을 리뉴얼했습니다.",
-        date : "2022.12.16~2023.01.09 (3주)",
+        date : "3주",
         contribution : "100%",
         skill : "HTML, CSS, JS, Jquery",
         tech : "php게시판, 캐시로그인, 캐로셀",
@@ -21,7 +22,7 @@ const projectData = [
         imgUrl : project2,
         title : "tickatalk",
         content : "팀프로젝트1. 티켓톡",
-        date : "2023.2.6~2023.02.22 (2주)",
+        date : "2주",
         contribution : "60%",
         skill : "HTML, CSS, JS, Jquery, bootstrap, Scss",
         tech : "캐시로그인, 부트스트랩, api",
@@ -32,7 +33,7 @@ const projectData = [
         imgUrl : project3,
         title : "4niture",
         content : "팀프로젝트2. 가구쇼핑몰",
-        date : "2023.03.15~2023.04.04 (3주)",
+        date : "3주",
         contribution : "70%",
         skill : "React, CSSmodule, antd, node.js",
         tech : "리액트, sequlize, 서버구현, sqllite",
@@ -43,8 +44,35 @@ const projectData = [
 ]
 
 const MainProject = () => {
+    const cardRef = useRef(null);
+    const imgRef = useRef(null);
+    const [translateY, setTranslateY] = useState(0);
+
+
+    const imgScroll = (idx,e) => {
+        let img = document.getElementById(idx);
+        const imgId = img.getAttribute("id");
+        img.setAttribute("style",`transform : translateY(${translateY}%)`)
+        if(idx==imgId){
+            const scrollDown = setInterval(()=>{
+                setTranslateY((prevY) => {
+                    const newY = prevY - 0.2;
+                    return newY > -1000 ? newY : 0;
+                });
+              }, 800);
+        }
+    }
+    const imgScrollUp = (idx,e) => {
+        let img = document.getElementById(idx);
+        console.log(img)
+        setTranslateY(0);
+         console.log(translateY)
+        img.setAttribute("style",`transform : translateY(${translateY}px)`)
+    }
+
     return(
         <>
+        
             <div className={styles.circleWrap}>
             </div>
             <div className={styles.MainProjectWrap}>
@@ -52,23 +80,30 @@ const MainProject = () => {
                     <h2>Project</h2>
 
                 {projectData.map((data, idx) => {
-                    console.log(data.imgUrl)
                     return(
-                        <div className={styles.cardWrap} key={idx}>
+                        <div className={styles.cardWrap} key={idx} id={`card${idx}`}
+                        ref={cardRef}
+                        onMouseOver={(e) => imgScroll(idx,e)} 
+                        onMouseLeave={(e) => imgScrollUp(idx,e)}
+                        >
                             <div className={styles.projectImgWrap}>
-                                <img src={data.imgUrl} alt="" className={styles.projectImg}/>
+                                <img src={data.imgUrl} alt="프로젝트이미지" 
+                                id = {idx}
+                                className={styles.projectImg}
+                                ref={imgRef}
+                                />
                             </div>
                             <div className={styles.projectDescWrap}>
                                 <div className={styles.projectDesc}>
                                     <p className={styles.projectTitle}>{data.title}</p>
                                     <p className={styles.projectContent}>{data.content}</p>
-                                    <p>제작기간 <br/> {data.date}</p>
-                                    <p>기여도 <br/>{data.contribution}</p>
+                                    <p>제작기간 : {data.date}</p>
+                                    <p>기여도 : {data.contribution}</p>
+                                    <p>배포 :  {data.deploy}</p>
                                 </div>
                                 <div className={styles.projectSkill}>
                                     <h3>skill <br/>{data.skill}</h3>
                                     <p>기술 <br/>{data.tech}</p>
-                                    <p>배포 <br/>{data.deploy}</p>
                                     <p>구현페이지<br/> {data.page}</p>
                                 </div>
                             </div>
