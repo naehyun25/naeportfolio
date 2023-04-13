@@ -8,68 +8,8 @@
     background-position-y:10%;
     background-size: 50%;
 }
-.cardWrap{
-    margin-bottom:46px;
-    width: 100%;
-    /* max-width: ; */
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 15px;
-    border: 0.5px solid #e3e6e9;
-    overflow: hidden;
-    justify-content: space-between;
-    transition: all 0.5s;
-    
-}
-.cardWrap:hover{
-    box-shadow:0 44px 84px -24px #5956e9;
-}
 h2{
     border-top-color: linear-gradient(to right, rgba(89,86,233,0), rgba(89,86,233,1), rgba(89,86,233,0));
     font-size: 2rem;
     color:#c75c6f;
-    padding-bottom:60px;
-}
-.projectImgWrap{
-    width: 35%;
-    margin: 20px;
-    overflow: hidden;
-    height: 300px;
-    border: 1px solid #e3e6e9;
-    transition: all 3s;
-}
-.projectImg{
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-}
-.projectDescWrap{
-    width: 65%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.projectDesc{
-    width: 24%;
-    text-align: left;
-    flex:1;
-    padding-left: 20px;
-}
-.projectTitle{
-    font-size: 2.2rem;
-    color : #c75c6f;
-    font-weight: 400;
-    padding: 0 20px;
-}
-.projectDescWrap{
-   
-}
-.projectContent{
-    color: #525260;
-}
-.projectSkill{
-    width:  40%;
-    border-left:1px solid #e3e6e9;
-    padding: 14px;
-    flex: 1;
 }

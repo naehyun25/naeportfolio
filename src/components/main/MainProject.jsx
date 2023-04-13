@@ -44,72 +44,17 @@ const projectData = [
 ]
 
 const MainProject = () => {
-    const cardRef = useRef(null);
-    const imgRef = useRef(null);
-    const [translateY, setTranslateY] = useState(0);
-
-
-    const imgScroll = (idx,e) => {
-        let img = document.getElementById(idx);
-        const imgId = img.getAttribute("id");
-        img.setAttribute("style",`transform : translateY(${translateY}%)`)
-        if(idx==imgId){
-            const scrollDown = setInterval(()=>{
-                setTranslateY((prevY) => {
-                    const newY = prevY - 0.2;
-                    return newY > -1000 ? newY : 0;
-                });
-              }, 800);
-        }
-    }
-    const imgScrollUp = (idx,e) => {
-        let img = document.getElementById(idx);
-        console.log(img)
-        setTranslateY(0);
-         console.log(translateY)
-        img.setAttribute("style",`transform : translateY(${translateY}px)`)
-    }
-
+   
     return(
         <>
-        
             <div className={styles.circleWrap}>
             </div>
             <div className={styles.MainProjectWrap}>
                 <InnerWrap>
                     <h2>Project</h2>
 
-                {projectData.map((data, idx) => {
-                    return(
-                        <div className={styles.cardWrap} key={idx} id={`card${idx}`}
-                        ref={cardRef}
-                        onMouseOver={(e) => imgScroll(idx,e)} 
-                        onMouseLeave={(e) => imgScrollUp(idx,e)}
-                        >
-                            <div className={styles.projectImgWrap}>
-                                <img src={data.imgUrl} alt="프로젝트이미지" 
-                                id = {idx}
-                                className={styles.projectImg}
-                                ref={imgRef}
-                                />
-                            </div>
-                            <div className={styles.projectDescWrap}>
-                                <div className={styles.projectDesc}>
-                                    <p className={styles.projectTitle}>{data.title}</p>
-                                    <p className={styles.projectContent}>{data.content}</p>
-                                    <p>제작기간  {data.date}</p>
-                                    <p>기여도  {data.contribution}</p>
-                                    <p>배포   {data.deploy}</p>
-                                </div>
-                                <div className={styles.projectSkill}>
-                                    <p>skill <br/>{data.skill}</p>
-                                    <p>기술 <br/>{data.tech}</p>
-                                    <p>구현페이지<br/> {data.page}</p>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
+              
+             
                 </InnerWrap>
             </div>
         </>

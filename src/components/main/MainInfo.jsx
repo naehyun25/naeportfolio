@@ -8,16 +8,13 @@ import circlePink from "../../assets/circle-pink.png";
 const MainInfo = () => {
     return(
         <div className={styles.MainInfoWrap}>
-            <div className={styles.circleWrap}>
-                <img src={circleYellow} alt="" className={styles.circleYellow}></img>
-                <img src={circlePurple} alt="" className={styles.circlePurple}></img>
-                <img src={circlePink} alt="" className={styles.circlePink}></img>
-            </div>
+            {/* <div className={styles.circleWrap}>
+            </div> */}
             <InnerWrap>
                 <div className={styles.MainIntroduction}>
-                    <h2>About Me</h2>
+                    <h2 className={styles.title}>About Me</h2>
                     {/* gsap으로 변경 */}
-                    <p>노력으로 갈고 닦아 보석처럼 빛나는 윤내현입니다.
+                    <p className={styles.subTitle}>노력으로 갈고 닦아 보석처럼 빛나는 윤내현입니다.
                         <br/>
                         매끈한 소통능력과 눈부신 코딩실력으로
                         <br/>
@@ -26,14 +23,13 @@ const MainInfo = () => {
                 </div>
                 <div className={styles.infoBoxesWrap}>
                     <div className={`${styles.boxWrap} ${styles.boxInfo}`}>
+            <img src={circlePink} alt="" className={styles.circlePink}></img>
                         <p className={styles.boxTitle}>
                             Info
                         </p>
                         <div className={styles.boxContent}>
-                            <p>1989.02.25
-                                <br/>
-                                010-5800-2443
-                            </p>
+                            <p>1989.02.25</p>
+                            <p>010-5800-2443</p>
                         </div>
                         <p className={styles.boxTitle}>
                             Licence
@@ -44,6 +40,7 @@ const MainInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxHistory}`}>
+                        <img src={circleYellow} alt="" className={styles.circleYellow}></img>
                         <p className={styles.boxTitle}>
                             History
                         </p>
@@ -56,6 +53,7 @@ const MainInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxEducation}`}>
+            <img src={circlePurple} alt="" className={styles.circlePurple}></img>
                         <p className={styles.boxTitle}>
                             Education
                         </p>
