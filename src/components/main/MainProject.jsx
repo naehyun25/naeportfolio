@@ -42,16 +42,36 @@ const projectData = [
     }
 
 ]
-
+const ProjectCard = (props)=>{
+    let {title,imgUrl,number,skills}=props;
+    return(
+        <div className={styles.projectCard}>
+            <div className={styles.projectImgWrap}>
+                <img src={imgUrl} alt="프로젝트이미지"/>
+            </div>
+            <div className={styles.projectDescWrap}>
+                <span className={styles.projectNumber}>{number}</span>
+                <span>{title}</span>
+                <p>{skills}</p>
+            </div>
+=       </div>
+    );
+}
 const MainProject = () => {
-   
     return(
         <>
-            <div className={styles.circleWrap}>
-            </div>
             <div className={styles.MainProjectWrap}>
                 <InnerWrap>
                     <h2>Project</h2>
+                    <p className={styles.subTitle}>작업한 프로젝트</p>
+                    <div className={styles.projectCardsWrap}>
+                        <ProjectCard
+                            number="01"
+                            title="독립기념관 리뉴얼"
+                            skills="HTML, CSS, JS, JQuery, PHP"
+                            imgUrl={project1}
+                        />
+                    </div>
 
               
              

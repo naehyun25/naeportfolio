@@ -10,8 +10,8 @@ const MainPage = () => {
         <div className={styles.mainWrapper}>
         <MainIntro/>
         <MainInfo/>
-        <MainSkill/>
         <MainProject/>
+        <MainSkill/>
         </div>
     )
 };
