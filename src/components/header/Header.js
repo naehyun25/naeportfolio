@@ -3,7 +3,8 @@ import {Link} from "react-router-dom";
 import styles from "./Header.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import HamburgerMenu from "./HamburgerMenu";
-import logoImg from "../../assets/logo-temp.jpg"
+import logoImg from "../../assets/logo-temp.jpg";
+import Logo from "../../assets/Lottie"
 
 const Header=() => {
     return(
@@ -12,7 +13,8 @@ const Header=() => {
                 <div className={styles.logoWrap}>
                     <Link to ="/">
                         <h1>
-                            <img src ={logoImg} alt="로고"/>
+                            <Logo/>
+                            {/* <img src ={logoImg} alt="로고"/> */}
                         </h1>
                     </Link>
                 </div>

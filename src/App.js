@@ -8,10 +8,10 @@ import MainProject from './components/main/MainProject';
 function App() {
   return (
     <div className="App">
-        <Header></Header>
+        <Header/>
         <RoutesIndex />
         <MainPage/>
-        <Footer></Footer>
+        <Footer/>
     </div>
   );
 }
