@@ -1,23 +1,31 @@
 .hamburgerWrap{
-    width: 3em;
-    height: 3em;
+    width: 60px;
+    height: 60px;
 }
 .hamburgerBtn{
-    width: 2.8em;
-    height: 2.8em;
+    width: 60px;
+    height: 60px;
     background-color : #525260;
     border-style: none;
-    border-radius: 15px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .hamburgerBtn span{
     display: inline-block;
     height: 2px;
-    width: 28px;
+    width:60%;
     background-color: #ffffff;
-    border-radius: 15px;
     margin: 3px auto;
+    transition: width 0.5s;
+}
+
+span.longbar{
+    width:60%;
+}
+
+span.shortbar{
+    width: 30%;
+    margin-right: 10px;
 }
