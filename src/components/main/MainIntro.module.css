@@ -49,7 +49,7 @@ circle 1.2
 .btns{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     z-index: 4;
     position: relative;
 }

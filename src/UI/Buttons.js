@@ -10,7 +10,7 @@ const ButtonWhite = (props) => {
         onMouseOver={()=>{setHover(true)}}
         onMouseOut={()=>{setHover(false)}}
         >
-            <Link to ="/" >
+            <Link to ="/" className={styles[props.font]}>
                 <img src={hover? props.srcWhite : props.src} alt="icon" className={styles.btnImg}></img>{props.name}
             </Link>
         </button>

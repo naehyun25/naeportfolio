@@ -1,11 +1,13 @@
 
 .btn{
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0px 30px 80px -20px #5956e9;
     position: relative;
     border:none;
     background-color: #fff;
     transition: all 0.5s;
+    padding: 28px 45px;
+    margin: 2px;
 }
 
 .btn:hover{
@@ -13,16 +15,19 @@
 }
 .btn a{
     display: inline-block;
-    padding:20px 18px;
     color:#0d6efd;
     font-weight: 500;
     transition: all 0.3s;
+    letter-spacing:-0.4;
 }
 .btn:hover a{
     color:#ffffff;
 }
 .btnImg{
-    width: 14%;
+    width: 20%;
     padding:2px;
     vertical-align: bottom;
+}
+.fontEnglish{
+    font-family: 'DM Sans', sans-serif;
 }

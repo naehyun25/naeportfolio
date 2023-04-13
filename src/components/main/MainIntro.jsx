@@ -40,9 +40,11 @@ const MainIntro = () => {
                         <p>윤나는 코드를 만드는<br/><span>윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
-                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} />
-                        <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite} />
-                        <ButtonWhite name="이력서" src={resume} srcWhite={resumeWhite} />
+                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" />
+                        <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}
+                        font="fontEnglish" />
+                        <ButtonWhite name="Resume" src={resume} srcWhite={resumeWhite}
+                        font="fontEnglish" />
                     </div>
                 </div>
                 <div className={styles.profileImg}></div>
