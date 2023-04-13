@@ -1,9 +1,9 @@
-.skillbar-bar{
+/* .skillbar-bar{
     background: linear-gradient(to right, 
     rgba(87, 86, 91, 0.8), rgba(75, 74, 79, 1), rgba(71, 70, 75,1), rgba(65, 64, 69,1), rgba(55, 54, 59,1) ) !important;
     transition: all 1000ms linear 0s !important;
-}
-.skillbar-bar:hover{
+} */
+.skillbar-bar{
     background: linear-gradient(to right, 
     rgba(254,194,32, 0.6), rgba(246,145,64, 0.7), rgba(242,98,98,0.8), rgba(238,72,114,0.9), rgba(235,49,129,1) ) !important;
 }
@@ -12,4 +12,5 @@
     font-size: 1.6rem !important;
     position: relative;
     transform: translate(10px 10px );
+    font-family: 'DM Sans', sans-serif;
 }

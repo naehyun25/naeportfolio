@@ -9,10 +9,16 @@
     
 }
 .mainSkillTitle{
-    color : #c75c6f;
-    font-weight: 500;
     font-size: 2rem;
+    color:#c75c6f;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom:15px;
     text-align: center;
+}
+.skillbarWrap{
+    position: relative;
+    margin: 56px 0 30px;
 }
 .skillIcons{
     display: flex;
@@ -23,6 +29,12 @@
     filter: grayscale(100%);
     transition: all 1s;
     padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight:500;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
 }
 .skillIcon:hover{
     filter:grayscale(0%);

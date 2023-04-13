@@ -32,14 +32,16 @@ const MainSkill = () => {
         <div className={styles.mainSkillWrap}>
             <InnerWrap>
                 <h2 className={styles.mainSkillTitle}>My Skills</h2>
+                <div className={styles.skillbarWrap}>
 
-                <SkillBar skills={skills} colors={colors} height={20} />
+                <SkillBar skills={skills} colors={colors} height={20}  animationDelay={300}/>
+                </div>
                 <div className={styles.skillIcons}>
                     <div className={styles.skillIcon}><img src={htmlIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={cssIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={jsIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={reactIcon} alt=""/></div>
-                    <div className={styles.skillIcon}><img src={sassIcon} alt=""/></div>
+                    <div className={styles.skillIcon}><img src={sassIcon} alt=""/>scss</div>
                     <div className={styles.skillIcon}><img src={nodeIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={figmaIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={vscodeIcon} alt=""/></div>

@@ -36,7 +36,7 @@ const MainInfo = () => {
                         </p>
                         <div className={styles.boxContent}>
                             <p>자동차운전면허 2종 자동</p>
-                            <p>중동교사 자격증(농업생명계열)</p>
+                            <p>중등교사 자격증(농업생명계열)</p>
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxHistory}`}>
@@ -45,10 +45,10 @@ const MainInfo = () => {
                             History
                         </p>
                         <div className={styles.boxContent}>
-                            <p>2008.03~2012.08</p>
+                            <p className={styles.date}>2008.03~2012.08</p>
                             <p>충북대학교 축산학과 졸업</p>
                             <p>교육학 복수전공</p>
-                            <p>2014.09~2022.07(7년11개월)</p>
+                            <p className={styles.date}>2014.09~2022.07(7년11개월)</p>
                             <p>(주) 태성트레이딩 근무</p>
                         </div>
                     </div>
@@ -58,9 +58,9 @@ const MainInfo = () => {
                             Education
                         </p>
                         <div className={styles.boxContent}>
-                            <p>2022.11~2023.05</p>
-                            <p>프로젝트 기반 프론트엔드(React&Vue) 웹&앱 SW개발자 양성과정</p>
-                            <p>2022.10~2022.11</p>
+                            <p className={styles.date}> 2022.11~2023.05</p>
+                            <p>프로젝트 기반 프론트엔드(React&Vue) <br/>웹&앱 SW개발자 양성과정</p>
+                            <p className={styles.date}>2022.10~2022.11</p>
                             <p>온라인과정(HTML,CSS)</p>
                         </div>
                     </div>
