@@ -4,7 +4,14 @@ import InnerWrap from "../../UI/InnerWrap";
 import project1 from "../../assets/project1.jpg";
 import project2 from "../../assets/project2.jpg";
 import project3 from "../../assets/project3.jpg";
-import { ButtonBlue } from "../../UI/Buttons";
+import { ButtonWhiteSmall } from "../../UI/Buttons";
+import github from "../../assets/github-icon.png";
+import notion from "../../assets/notion-icon.png";
+import resume from "../../assets/resume-icon.png";
+import githubWhite from "../../assets/github-white-icon.png";
+import notionWhite from "../../assets/notion-white-icon.png";
+import resumeWhite from "../../assets/resume-white-icon.png";
+import circlePink from "../../assets/circle-pink.png";
 
 const projectData = [
     {
@@ -43,18 +50,31 @@ const projectData = [
 
 ]
 const ProjectCard = (props)=>{
-    let {title,imgUrl,number,skills}=props;
+    let {title,imgUrl,number,skills,date,contribution,page}=props;
     return(
         <div className={styles.projectCard}>
             <div className={styles.projectImgWrap}>
-                <img src={imgUrl} alt="프로젝트이미지"/>
+                <div className={styles.descWrap}>
+                    <p>제작기간 {date} </p>
+                    <p>본인기여도{contribution}</p>
+                    <p>구현페이지{page}</p>
+                    <div className={styles.btnWrap}>
+                        <ButtonWhiteSmall name="github" src={github} srcWhite={githubWhite}/>
+                        <ButtonWhiteSmall name="visit" src={github} srcWhite={githubWhite}/>
+                    </div>
+                </div>
+                <div className={styles.imgCover}>
+                </div>
+                <img src={imgUrl} alt="프로젝트이미지" className={styles.projectImg}/>
             </div>
             <div className={styles.projectDescWrap}>
-                <span className={styles.projectNumber}>{number}</span>
-                <span>{title}</span>
+                <p className={styles.projectNumber}>{number}
+                    <img src={circlePink} alt="" className={styles.circlePink} />
+                </p>
+                <div className={styles.projectTitle}>{title}</div>
                 <p>{skills}</p>
             </div>
-=       </div>
+        </div>
     );
 }
 const MainProject = () => {
@@ -70,6 +90,9 @@ const MainProject = () => {
                             title="독립기념관 리뉴얼"
                             skills="HTML, CSS, JS, JQuery, PHP"
                             imgUrl={project1}
+                            date="3주"
+                            contribution="100%"
+                            page="메인1, 게시판1, 로그인1"
                         />
                     </div>
 

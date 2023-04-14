@@ -1,3 +1,86 @@
+/* ProjectCard */
+.projectCard{
+    box-shadow: 0 55px 86px -35px #ecf2f6;
+    padding: 0 35px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+     /* 나중에수정 */
+    width: 50%;
+    height: 50%;
+    max-height: 613px;
+}
+.projectImgWrap{
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    max-height: 460px;
+    border-radius: 30px 30px 0 0 ;
+    position: relative;
+}
+.projectImg{
+width: 100%;
+}
+.projectDescWrap{
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    padding: 40px 50px;
+    position: relative;
+}
+.projectNumber{
+    color : #c75c6f;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+}
+.circlePink{
+    position: absolute;
+    width: 100%;
+    opacity:0.5;
+    top: 10%;
+    left: 10%;
+}
+.projectTitle{
+    color:#292930;
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;
+    font-family: "pretendard", sans-serif;
+}
+
+
+    /* btn cover */
+.imgCover{
+    position:absolute;
+    background-color: #1c2147;
+    top:0;
+    left:0;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+}
+.descWrap {
+    opacity:1;
+    position:absolute;
+    z-index:2;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+}
+.descWrap p{
+    color : #ffffff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 34%;
+}
+.btnWrap{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* MainProject */
 .MainProjectWrap{
     margin: 0 auto;
     padding: 140px 0 110px ;
@@ -27,26 +110,4 @@ h2{
 .projectCardsWrap{
     display: flex;
     width: 100%;
-}
-.projectCard{
-    box-shadow: 0 55px 86px -35px #ecf2f6;
-    border-radius: 30px;
-    margin-bottom: 40px;
-    overflow: hidden;
-     /* 나중에수정 */
-    width: 50%;
-    height: 50%;
-}
-.projectCard img{
-    width: 100%;
-    height: 500px;
-}
-.projectDescWrap{
-    background-color: #fff;
-    border-radius: 0 0 30px 30px;
-    padding: 40px 50px;
-}
-.projectNumber{
-    color : #c75c6f;
-    font-size: 1.6rem;
 }

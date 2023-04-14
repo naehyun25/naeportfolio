@@ -17,6 +17,20 @@ const ButtonWhite = (props) => {
     )
 };
 
+const ButtonWhiteSmall = (props) => {
+    const [hover, setHover]= useState(false);
+
+    return(
+        <button className={styles.btnWhiteSmall} 
+        onMouseOver={()=>{setHover(true)}}
+        onMouseOut={()=>{setHover(false)}}
+        >
+            <Link to ="/" className={styles[props.font]}>
+                <img src={hover? props.srcWhite : props.src} alt="icon" className={styles.btnImg}></img>{props.name}
+            </Link>
+        </button>
+    )
+};
 
 const ButtonBlue = (props) => {
     return(
@@ -28,5 +42,5 @@ const ButtonBlue = (props) => {
     )
 };
 
-export {ButtonWhite, ButtonBlue};
+export {ButtonWhite, ButtonWhiteSmall, ButtonBlue};
 
