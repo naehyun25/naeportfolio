@@ -15,8 +15,6 @@ import circlePink from "../../assets/circle-pink.png";
 
 const projectData = [
     {
-        imgUrl : project1,
-        title : "독립기념관 리뉴얼",
         content : "독립기념관을 리뉴얼했습니다.",
         date : "3주",
         contribution : "100%",
@@ -50,20 +48,23 @@ const projectData = [
 
 ]
 const ProjectCard = (props)=>{
-    let {title,imgUrl,number,skills,date,contribution,page}=props;
+    let {title,imgUrl,number,skills,date,contribution,page,content,deploy,tech}=props;
     return(
         <div className={styles.projectCard}>
             <div className={styles.projectImgWrap}>
-                <div className={styles.descWrap}>
-                    <p>제작기간 {date} </p>
-                    <p>본인기여도{contribution}</p>
-                    <p>구현페이지{page}</p>
-                    <div className={styles.btnWrap}>
-                        <ButtonWhiteSmall name="github" src={github} srcWhite={githubWhite}/>
-                        <ButtonWhiteSmall name="visit" src={github} srcWhite={githubWhite}/>
-                    </div>
-                </div>
                 <div className={styles.imgCover}>
+                </div>
+                <div className={styles.descWrap}>
+                    <p> {content} </p>
+                    <p>제작기간 {date} </p>
+                    <p>본인기여도 {contribution}</p>
+                    <p>구현페이지 <br/>{page}</p>
+                    <p>Tech <br/>{tech}</p>
+                    <p>배포 {deploy}</p>
+                    <div className={styles.btnWrap}>
+                        <ButtonWhiteSmall name="github" font="fontEnglish" src={github} srcWhite={githubWhite}/>
+                        <ButtonWhiteSmall name="visit" font="fontEnglish" src={github} srcWhite={githubWhite}/>
+                    </div>
                 </div>
                 <img src={imgUrl} alt="프로젝트이미지" className={styles.projectImg}/>
             </div>
@@ -71,8 +72,8 @@ const ProjectCard = (props)=>{
                 <p className={styles.projectNumber}>{number}
                     <img src={circlePink} alt="" className={styles.circlePink} />
                 </p>
-                <div className={styles.projectTitle}>{title}</div>
-                <p>{skills}</p>
+                <div className={`${styles.projectTitle} ${styles[props.font]}`}>{title}</div>
+                <p className={styles.projectSkills}>{skills}</p>
             </div>
         </div>
     );
@@ -88,12 +89,43 @@ const MainProject = () => {
                         <ProjectCard
                             number="01"
                             title="독립기념관 리뉴얼"
+                            content = "독립기념관을 리뉴얼했습니다."
                             skills="HTML, CSS, JS, JQuery, PHP"
                             imgUrl={project1}
                             date="3주"
                             contribution="100%"
                             page="메인1, 게시판1, 로그인1"
+                            tech = "php게시판, 캐시로그인, 캐로셀"
+                            deploy = "GitHub, Dothome"
                         />
+                        <ProjectCard
+                            number="02"
+                            title="tickatalk"
+                            content = "팀프로젝트1. 티켓톡"
+                            skills="HTML, CSS, JS, Jquery, bootstrap, Scss"
+                            imgUrl={project2}
+                            date="2주"
+                            contribution="25%"
+                            page="메인1, 서브페이지1, 로그인1"
+                            font="fontEnglish"
+                            tech = "캐시로그인, 부트스트랩, api"
+                            deploy = "GitHub"
+                        />
+                        <ProjectCard
+                            number="03"
+                            title="4niture"
+                            content = "팀프로젝트2. 가구쇼핑몰"
+                            skills="React, CSSmodule, antd, node.js"
+                            imgUrl={project3}
+                            date="3주"
+                            contribution="25%"
+                            page="메인1, 상세상품게시판4, 검색페이지1, 
+                            상품업로드1, 리뷰업로드1, 리뷰페이지1"
+                            font="fontEnglish"
+                            tech = "리액트, sequlize, 서버구현, sqllite"
+                            deploy = "Vercell, CloudType"
+                        />
+                        
                     </div>
 
               
