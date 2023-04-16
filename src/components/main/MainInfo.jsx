@@ -1,13 +1,38 @@
-import React from "react";
+import React, {useLayoutEffect, useEffect, useRef} from "react";
 import InnerWrap from "../../UI/InnerWrap";
 import styles from "./MainInfo.module.css";
 import circleYellow from "../../assets/circle-yellow.png";
 import circlePurple from "../../assets/circle-purple.png";
 import circlePink from "../../assets/circle-pink.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // gsap의 ScrollTrigger 플러그인을 import
+
+gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 플러그인을 등록
 
 const MainInfo = () => {
+    const MainInfoWrap = useRef(null);
+
+    useLayoutEffect(()=>{
+        let moving = gsap.context((self) => {
+            const circles = self.selector(".circle");
+            circles.forEach((circle)=>{
+                gsap.to(circle,5,{
+                    x:300,
+                    scale:1,
+                    rotate:360,
+                    scrollTrigger: {
+                        trigger: circle,
+                        start: 'bottom right',
+                        end: 0,
+                        scrub: true,
+                      },
+                })
+            });
+            },MainInfoWrap);
+          return () => moving.revert();
+    },[])
     return(
-        <div className={styles.MainInfoWrap}>
+        <div className={styles.MainInfoWrap} ref={MainInfoWrap}>
             {/* <div className={styles.circleWrap}>
             </div> */}
             <InnerWrap>
@@ -23,7 +48,9 @@ const MainInfo = () => {
                 </div>
                 <div className={styles.infoBoxesWrap}>
                     <div className={`${styles.boxWrap} ${styles.boxInfo}`}>
-            <img src={circlePink} alt="" className={styles.circlePink}></img>
+                        <img src={circlePink} alt="" 
+                        className={`${styles.circlePink} circle`}
+                        />
                         <p className={styles.boxTitle}>
                             Info
                         </p>
@@ -40,7 +67,9 @@ const MainInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxHistory}`}>
-                        <img src={circleYellow} alt="" className={styles.circleYellow}></img>
+                        <img src={circleYellow} alt="" 
+                        className={`${styles.circleYellow} circle`}
+                        />
                         <p className={styles.boxTitle}>
                             History
                         </p>
@@ -53,7 +82,9 @@ const MainInfo = () => {
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxEducation}`}>
-            <img src={circlePurple} alt="" className={styles.circlePurple}></img>
+                        <img src={circlePurple} alt="" 
+                        className={`${styles.circlePurple} circle`}
+                        />
                         <p className={styles.boxTitle}>
                             Education
                         </p>
