@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useEffect, useRef} from "react";
+import React, {useLayoutEffect, useRef} from "react";
 import InnerWrap from "../../UI/InnerWrap";
 import styles from "./MainInfo.module.css";
 import circleYellow from "../../assets/circle-yellow.png";
