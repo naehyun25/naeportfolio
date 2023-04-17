@@ -1,4 +1,4 @@
-import React, {useState,useEffect, useRef} from "react";
+import React, {useState,useRef} from "react";
 import styles from "./MainProject.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import project1 from "../../assets/project1.jpg";

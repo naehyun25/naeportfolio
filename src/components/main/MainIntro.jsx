@@ -16,9 +16,6 @@ const MainIntro = () => {
     return(
         <div className={styles.mainIntroWrap}>
             <div className={styles.backGroundWrap}>
-                <div className={styles.donutTop}>                
-                <DonutTop/>
-                </div>
                 <div className={styles.donutBottom}>                
                 <DonutBottom/>
                 </div>

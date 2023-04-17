@@ -3,14 +3,6 @@ btn, text 4
 circle 1.2
 3dimg 3
 */
-.donutTop{
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    top: -14%;
-    left: 54%;
-    z-index:3;
-}
 .donutBottom{
     position: absolute;
     width: 64%;

@@ -1,3 +1,11 @@
 .mainWrapper{
     margin: 0 auto;
 }
+.donutTop{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: -14%;
+    left: 54%;
+    z-index:3;
+}

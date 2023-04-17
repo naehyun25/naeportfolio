@@ -5,15 +5,15 @@ import circleYellow from "../../assets/circle-yellow.png";
 import circlePurple from "../../assets/circle-purple.png";
 import circlePink from "../../assets/circle-pink.png";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // gsap의 ScrollTrigger 플러그인을 import
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 
-gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 플러그인을 등록
-
+gsap.registerPlugin(ScrollTrigger); 
 const MainInfo = () => {
+   
     const MainInfoWrap = useRef(null);
-
     useLayoutEffect(()=>{
         let moving = gsap.context((self) => {
+            console.log(self)
             const circles = self.selector(".circle");
             circles.forEach((circle)=>{
                 gsap.to(circle,5,{
@@ -31,6 +31,7 @@ const MainInfo = () => {
             },MainInfoWrap);
           return () => moving.revert();
     },[])
+
     return(
         <div className={styles.MainInfoWrap} ref={MainInfoWrap}>
             {/* <div className={styles.circleWrap}>

@@ -1,13 +1,7 @@
-import React,{Suspense, useRef, useEffect, useState, useMemo } from "react";
-import {Canvas,renderer,useFrame,useThree} from '@react-three/fiber';
-import * as THREE from "three";
+import React,{useState, useRef} from "react";
+import {Canvas,renderer,useFrame} from '@react-three/fiber';
 import { OrbitControls } from "@react-three/drei";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 // OctahedronGeometry
-gsap.registerPlugin(ScrollTrigger);
-
-
 const Donuttop = () => {
     const donutRef=useRef();
     const [hovered, hover] = useState(false)
