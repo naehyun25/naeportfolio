@@ -1,19 +1,14 @@
-import React,{Suspense, useRef, useEffect, useState, useMemo } from "react";
+import React,{Suspense, useRef, useEffect, useState, useMemo, useLayoutEffect } from "react";
 import {Canvas,renderer,useFrame,useThree} from '@react-three/fiber';
 import * as THREE from "three";
 import { OrbitControls } from "@react-three/drei";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-// OctahedronGeometry
-gsap.registerPlugin(ScrollTrigger);
-
 
 const Donuttop = () => {
     const donutRef=useRef();
     const [hovered, hover] = useState(false)
     useFrame(() => {
-         donutRef.current.rotation.y-=0.01;
-         donutRef.current.rotation.x+=0.01;
+        donutRef.current.rotation.y-=0.01;
+        donutRef.current.rotation.x+=0.01;
     })
     return(
             <mesh ref={donutRef}
@@ -35,6 +30,7 @@ const Donuttop = () => {
     )
 }
 const DonutTop = () => {
+    
     return(
             <Canvas
             style={{
@@ -45,7 +41,7 @@ const DonutTop = () => {
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10,-10,-10]}/>
                 <Donuttop position={[50, 50, 0]}/>
-                {/* <OrbitControls/> */}
+                <OrbitControls/>
             </Canvas>
 
     )

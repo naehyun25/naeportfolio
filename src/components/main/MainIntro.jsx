@@ -9,19 +9,21 @@ import resume from "../../assets/resume-icon.png";
 import githubWhite from "../../assets/github-white-icon.png";
 import notionWhite from "../../assets/notion-white-icon.png";
 import resumeWhite from "../../assets/resume-white-icon.png";
+import profile from "../../assets/profile.png";
 
 const MainIntro = () => {
 
     
     return(
         <div className={styles.mainIntroWrap}>
-            <div className={styles.backGroundWrap}>
+            <InnerWrap>
+                <div className={styles.backGroundWrap}>
+                    <div className={styles.donutTop}>                
+                    <DonutTop />
+                </div>
                 <div className={styles.donutBottom}>                
                 <DonutBottom/>
                 </div>
-                {/* <div className={styles.conorBottom}>                
-                <CornorBottom/>
-                </div> */}
                 <ul>
                     <li className={styles.static}></li>
                     <li className={styles.moving1}></li>
@@ -30,21 +32,22 @@ const MainIntro = () => {
                     <li className={styles.moving4}></li>
                 </ul>
             </div>
-            <InnerWrap>
             <div className={styles.mainBanner}>
                 <div className={styles.bannerDesc}>
                     <div>
                         <p>윤나는 코드를 만드는<br/><span>윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
-                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" />
+                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" link="https://github.com/naehyun25"/>
                         <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}
-                        font="fontEnglish" />
+                        font="fontEnglish" link="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388"/>
                         <ButtonWhite name="Resume" src={resume} srcWhite={resumeWhite}
-                        font="fontEnglish" />
+                        font="fontEnglish" link="https://github.com/naehyun25"/>
                     </div>
                 </div>
-                <div className={styles.profileImg}></div>
+                <div className={styles.profileImg}>
+                    <img alt="" src={profile}/>
+                </div>
 
             </div>
 
