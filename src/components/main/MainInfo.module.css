@@ -2,8 +2,8 @@
     padding:140px 0 110px;
     margin: 0 auto;
     background: url("../../assets/info-background.png") no-repeat;
-    background-position-x: 0%;
-    background-position-y: -24%;
+    background-position-x: -2%;
+    background-position-y: -40%;
 }
 .title{
     font-size: 2rem;
@@ -24,7 +24,6 @@
 .infoBoxesWrap{
     display: flex;
     justify-content: space-between;
-    
 }
 .boxWrap{
     width:410px;
