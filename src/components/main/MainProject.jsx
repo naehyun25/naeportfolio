@@ -1,22 +1,25 @@
-import React, {useState,useRef} from "react";
+import React, {useState,useRef,createContext, useContext} from "react";
 import { Link } from "react-router-dom";
 import styles from "./MainProject.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import project1 from "../../assets/project1.jpg";
 import project2 from "../../assets/project2.jpg";
 import project3 from "../../assets/project3.jpg";
-import project4 from "../../assets/project4.gif";
+import project4Gif from "../../assets/project4.gif";
+import project4 from "../../assets/project4.png";
 import { ButtonWhiteSmall } from "../../UI/Buttons";
 import github from "../../assets/github-icon.png";
 import githubWhite from "../../assets/github-white-icon.png";
+import deployIcon from "../../assets/deploy-icon.png";
+import deployWhite from "../../assets/deploy-icon-white.png";
 import circlePink from "../../assets/circle-pink.png";
 
-  
   const ProjectCard = (props) => {
     const imgRef = useRef(null);
     const imgCover = useRef();
     const [translateY, setTranslateY] = useState(0);
     const [visual, setVisual] = useState(0);
+    const [hover, setHover] = useState(true);
 
     const ImgScroll = () => {
         const imgCoverHeight = imgCover.current.offsetHeight;
@@ -25,15 +28,16 @@ import circlePink from "../../assets/circle-pink.png";
         let translateOn = maxTranslateY;
         setTranslateY(translateOn);
         setVisual(0.7);
-        
-    };
-    const ImgScrollOff =()=>{
+        setHover(!hover);
+            };
+      const ImgScrollOff =()=>{
         let translateOff=0;
         setTranslateY(translateOff)
         setVisual(0)
+        setHover(!hover)
     }
     
-    let { title, imgUrl, number, skills, date, contribution, page, content, deploy, tech } = props;
+    let { title, imgUrl, number, skills, date, contribution, page, content, tech, deploy, aGithub,aVisit,aDesc} = props;
   
     return (
       <div className={styles.projectCard} onMouseOver={ImgScroll} onMouseLeave={ImgScrollOff}>
@@ -53,13 +57,17 @@ import circlePink from "../../assets/circle-pink.png";
             </p>
             <p>배포 {deploy}</p>
             <div className={styles.btnWrap}>
-              <ButtonWhiteSmall name="github" font="fontEnglish" src={github} srcWhite={githubWhite} link={props}/>
-              <ButtonWhiteSmall name="visit" font="fontEnglish" src={github} srcWhite={githubWhite} />
-              <ButtonWhiteSmall name="상세설명" src={github} srcWhite={githubWhite} />
+              <ButtonWhiteSmall name="Github" font="fontEnglish" src={github} srcWhite={githubWhite} link={aGithub}/>
+              <ButtonWhiteSmall name="Visit" font="fontEnglish" src={deployIcon} srcWhite={deployWhite} link={aVisit} />
+              {/* <ButtonWhiteSmall name="상세페이지"  font="fontKorean" src={deployIcon} srcWhite={deployWhite} link={aDesc}/> */}
             </div>
           </div>
-          <img src={imgUrl} alt="프로젝트이미지" className={styles.projectImg}
+          <div className={styles.projectImgCover}>
+          <img src={ hover ? project4Gif : project4 }
+          // src={imgUrl} 
+          alt="프로젝트이미지" className={styles.projectImg}
           ref={imgRef}  style={{ transform: `translateY(-${translateY}px)`}}/>
+          </div>
         </div>
         <div className={styles.projectDescWrap}>
           <p className={styles.projectNumber}>
@@ -72,79 +80,93 @@ import circlePink from "../../assets/circle-pink.png";
       </div>
     );
   };
-const MainProject = () => {
+const MainProject = (hover) => {console.log(hover)
     return(
         <>
             <div className={styles.MainProjectWrap}>
                 <InnerWrap>
                     <h2>Project</h2>
                     <p className={styles.subTitle}>작업한 프로젝트</p>
-                    <div className={styles.projectCardsWrap}>
-                        <ProjectCard
-                            number="01"
-                            title="독립기념관 리뉴얼"
-                            content = "독립기념관을 리뉴얼했습니다."
-                            skills="HTML, CSS, JS, JQuery"
-                            imgUrl={project1}
-                            date="3주"
-                            contribution="100%"
-                            page="메인1, 게시판1, 로그인1"
-                            tech = "캐시로그인, 캐로셀"
-                            deploy = "GitHub"
-                        />
-                        <ProjectCard
-                            number="02"
-                            title="독립기념관 리뉴얼 (ver,PHP)"
-                            content = "독립기념관을 리뉴얼했습니다."
-                            skills="HTML, CSS, JS, JQuery, PHP"
-                            imgUrl={project1}
-                            date="1주"
-                            contribution="100%"
-                            page="메인1, 게시판1, 로그인1"
-                            tech = "php게시판, 캐시로그인"
-                            deploy = "Dothome"
-                        />
-                        <ProjectCard
-                            number="03"
-                            title="tickatalk"
-                            content = "팀프로젝트1. 티켓톡"
-                            skills="HTML, CSS, JS, Jquery, bootstrap, Scss"
-                            imgUrl={project2}
-                            date="2주"
-                            contribution="25%"
-                            page="메인1, 서브페이지1, 로그인1"
-                            font="fontEnglish"
-                            tech = "캐시로그인, 부트스트랩, api"
-                            deploy = "GitHub"
-                        />
-                        <ProjectCard
-                            number="04"
-                            title="4niture"
-                            content = "팀프로젝트2. 가구쇼핑몰"
-                            skills="React, CSSmodule, antd, node.js"
-                            imgUrl={project3}
-                            date="3주"
-                            contribution="25%"
-                            page="메인1, 상세상품게시판4, 검색페이지1, 
-                            상품업로드1, 리뷰업로드1, 리뷰페이지1"
-                            font="fontEnglish"
-                            tech = "리액트, sequlize, 서버구현, sqllite"
-                            deploy = "Vercell, CloudType"
-                        />
+                    <div className={styles.projectCardsWrap} >
+                      <ProjectCard 
+                          number="01"
+                          title="독립기념관 리뉴얼"
+                          content = "독립기념관을 리뉴얼 Ver.1"
+                          skills="HTML, CSS, JS, JQuery"
+                          imgUrl={project1}
+                          date="3주"
+                          contribution="100%"
+                          page="메인1, 게시판1, 로그인1"
+                          tech = "캐시로그인, 캐로셀"
+                          deploy = "GitHub"
+                          aGithub = "https://github.com/naehyun25/project1"
+                          aVisit = "https://naehyun25.github.io/project1/"
+                          // aDesc = "https://www.naver.com"
+                      />
                       <ProjectCard
-                            number="05"
-                            title="4niture App"
-                            content = "가구쇼핑몰 어플"
-                            skills="React-native-Expo, node.js"
-                            imgUrl={project4}
-                            date="1주"
-                            contribution="100%"
-                            page="메인1, 상품페이지1, 리뷰페이지1"
-                            font="fontEnglish"
-                            tech = "react-native-expo, sequlize, 서버구현, sqllite"
-                            deploy = "CloudType, apk"
-                        />
-                        
+                          number="02"
+                          title="독립기념관 리뉴얼 (ver.PHP)"
+                          content = "독립기념관을 리뉴얼했습니다."
+                          skills="HTML, CSS, JS, JQuery, PHP"
+                          imgUrl={project1}
+                          date="1주"
+                          contribution="100%"
+                          page="메인1, 게시판1, 로그인1"
+                          tech = "php게시판, 캐시로그인"
+                          deploy = "Dothome"
+                          aGithub = "https://github.com/naehyun25/project1-ver2"
+                          aVisit = "http://naeh.dothome.co.kr/index.php"
+                          // aDesc = "https://www.naver.com"
+                      />
+                      <ProjectCard
+                          number="03"
+                          title="tickatalk"
+                          content = "팀프로젝트1. 티켓톡"
+                          skills="HTML, CSS, JS, Jquery, bootstrap, Scss"
+                          imgUrl={project2}
+                          date="2주"
+                          contribution="25%"
+                          page="메인1, 서브페이지1, 로그인1"
+                          font="fontEnglish"
+                          tech = "캐시로그인, 부트스트랩, api"
+                          deploy = "GitHub"
+                          aGithub = "https://github.com/ejin1018/ticatalk"
+                          aVisit = "https://ticatalk.vercel.app/"
+                          // aDesc = "https://www.naver.com"
+                      />
+                      <ProjectCard
+                          number="04"
+                          title="4niture"
+                          content = "팀프로젝트2. 가구쇼핑몰"
+                          skills="React, CSSmodule, antd, node.js"
+                          imgUrl={project3}
+                          date="3주"
+                          contribution="25%"
+                          page="메인1, 상세상품게시판4, 검색페이지1, 
+                          상품업로드1, 리뷰업로드1, 리뷰페이지1"
+                          font="fontEnglish"
+                          tech = "리액트, sequlize, 서버구현, sqllite"
+                          deploy = "Vercell, CloudType"
+                          aGithub = "https://github.com/hejo47/4niture_react"
+                          aVisit = "https://4niture-react.vercel.app/"
+                          // aDesc = "https://www.naver.com"
+                          />
+                      <ProjectCard 
+                        number="05"
+                        title="4niture App"
+                        content = "가구쇼핑몰 어플"
+                        skills="React-native-Expo, node.js"
+                        imgUrl={ hover ? project4Gif : project4 }
+                        date="1주"
+                        contribution="100%"
+                        page="메인1, 상품페이지1, 리뷰페이지1"
+                        font="fontEnglish"
+                        tech = "react-native-expo, sequlize, 서버구현, sqllite"
+                        deploy = "CloudType, apk"
+                        aGithub = "https://github.com/naehyun25/4niture-native-expo-app"
+                        aVisit = "https://github.com/naehyun25/4niture-native-expo-app/tree/main/assets/4nitureapp.apk"
+                        // aDesc = "https://www.naver.com"
+                      />
                     </div>
 
               
