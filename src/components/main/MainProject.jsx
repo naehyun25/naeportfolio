@@ -19,7 +19,6 @@ import circlePink from "../../assets/circle-pink.png";
     const imgCover = useRef();
     const [translateY, setTranslateY] = useState(0);
     const [visual, setVisual] = useState(0);
-    const [hover, setHover] = useState(true);
 
     const ImgScroll = () => {
         const imgCoverHeight = imgCover.current.offsetHeight;
@@ -28,13 +27,11 @@ import circlePink from "../../assets/circle-pink.png";
         let translateOn = maxTranslateY;
         setTranslateY(translateOn);
         setVisual(0.7);
-        setHover(!hover);
             };
       const ImgScrollOff =()=>{
         let translateOff=0;
         setTranslateY(translateOff)
         setVisual(0)
-        setHover(!hover)
     }
     
     let { title, imgUrl, number, skills, date, contribution, page, content, tech, deploy, aGithub,aVisit,aDesc} = props;
@@ -63,8 +60,7 @@ import circlePink from "../../assets/circle-pink.png";
             </div>
           </div>
           <div className={styles.projectImgCover}>
-          <img src={ hover ? project4Gif : project4 }
-          // src={imgUrl} 
+          <img src={imgUrl} 
           alt="프로젝트이미지" className={styles.projectImg}
           ref={imgRef}  style={{ transform: `translateY(-${translateY}px)`}}/>
           </div>
@@ -156,7 +152,7 @@ const MainProject = (hover) => {console.log(hover)
                         title="4niture App"
                         content = "가구쇼핑몰 어플"
                         skills="React-native-Expo, node.js"
-                        imgUrl={ hover ? project4Gif : project4 }
+                        imgUrl={project4Gif}
                         date="1주"
                         contribution="100%"
                         page="메인1, 상품페이지1, 리뷰페이지1"
