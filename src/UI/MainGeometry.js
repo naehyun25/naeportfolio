@@ -41,7 +41,7 @@ const DonutTop = () => {
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10,-10,-10]}/>
                 <Donuttop position={[50, 50, 0]}/>
-                <OrbitControls/>
+                {/* <OrbitControls/> */}
             </Canvas>
 
     )

@@ -1,6 +1,7 @@
 header{
     width: 100%;
-    /* border-bottom: 2px solid rgba(82,82,96,0.4); */
+    border-bottom: 2px solid #eee;
+    /* rgba(82,82,96,0.2); */
     margin: 0 auto;
     padding-top: 20px;
 }

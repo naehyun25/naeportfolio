@@ -27,7 +27,8 @@ circle 1.2
     height: 78vh;
 }
 .profileImg{
-    width: 29%; /* 왠만하면 건들지 말것 */
+    width: 29%;
+    /* 29%; 왠만하면 건들지 말것 */
     position: absolute;
     z-index: 4;
     left: 55%;

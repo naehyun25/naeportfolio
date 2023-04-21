@@ -16,7 +16,7 @@ const MainInfo = () => {
     useEffect(()=>{
         const intervalId = setInterval(
             () => setIndex((index) => index + 1),
-            3000, 
+            2000, 
           );
           return () => clearTimeout(intervalId);
           
