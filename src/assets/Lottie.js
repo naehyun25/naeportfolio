@@ -15,7 +15,7 @@ const Lottie = () => {
 
   return (
     <>
-      <div ref={yoon} style={{ position: "absolute", width:100, height:100, top:12}}>
+      <div ref={yoon} style={{ position: "absolute", width:100, height:100, top:0}}>
         {/* <span  style={{ position: "absolute", 
        }}>
         </span> */}

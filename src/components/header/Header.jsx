@@ -6,6 +6,12 @@ import HamburgerMenu from "./HamburgerMenu";
 import Logo from "../../assets/Lottie"
 
 const Header=() => {
+
+    const moveTo=(e)=>{
+        e.preventDefault();
+
+    }
+
     return(
         <header>
             <div className={styles.headerWrap}>
@@ -19,11 +25,11 @@ const Header=() => {
                 <InnerWrap>
                         <nav>
                             <ul className={styles.navMenu}>
-                                <li><Link to ='./test'>Home</Link></li>
-                                <li><Link to ='/'>About Me</Link></li>
-                                <li><Link to ='/'>Skills</Link></li>
-                                <li><Link to ='/'>Projects</Link></li>
-                                <li><Link to ='/'>Contact Me</Link></li>
+                                <li><Link to ='#'onClick={moveTo}>Home</Link></li>
+                                <li><Link to ='#'>About Me</Link></li>
+                                <li><Link to ='#'>Skills</Link></li>
+                                <li><Link to ='#'>Projects</Link></li>
+                                <li><Link to ='#'>Contact Me</Link></li>
                             </ul>
                         </nav>
                 </InnerWrap>
