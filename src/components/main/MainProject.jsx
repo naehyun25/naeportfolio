@@ -157,14 +157,14 @@ const MainProject = (hover) => {console.log(hover)
                         // content = "가구쇼핑몰 어플"
                         skills="React-native-Expo, node.js"
                         imgUrl={project4Gif}
-                        date="1주"
+                        date="3일"
                         contribution="100%"
                         page="메인Stack, 상품Stack, 리뷰Stack"
                         font="fontEnglish"
                         tech = "react-native-expo, Carousel구현, Update-품절기능 구현, Post-상품구매"
                         deploy = "CloudType, Apk"
                         aGithub = "https://github.com/naehyun25/4niture-native-expo-app"
-                        aVisit = "https://github.com/naehyun25/4niture-native-expo-app/tree/main/assets/4nitureapp.apk"
+                        aVisit = "https://github.com/naehyun25/4niture-native-expo-app/tree/main/assets/apkqr.png"
                         btnName="Download"
                         // aDesc = "https://www.naver.com"
                       />
