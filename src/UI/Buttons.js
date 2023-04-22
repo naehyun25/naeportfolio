@@ -34,11 +34,11 @@ const ButtonWhiteSmall = (props) => {
 
 const ButtonBlue = (props) => {
     return(
-        <button className={styles.btn}>
-        <Link to ="/">
-            <img src={props.src} alt="icon" className={styles.btnImg}></img>{props.name}
-        </Link>
-    </button>
+        <button className={styles.btnBlue}>
+            <Link to = {props.link} className={styles[props.font]}>
+                <img src={props.src} alt="icon" className={styles.btnImg}></img>{props.name}
+            </Link>
+        </button>
     )
 };
 

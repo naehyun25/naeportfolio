@@ -24,10 +24,11 @@ circle 1.2
     background-color: #2522BA;
     border-radius: 60px;
     position: relative;
-    height: 78vh;
+    /* height: 78vh; */
+    min-height:840px;
 }
 .profileImg{
-    width: 29%;
+    width: 32%;
     /* 29%; 왠만하면 건들지 말것 */
     position: absolute;
     z-index: 4;

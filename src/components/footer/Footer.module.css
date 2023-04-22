@@ -7,31 +7,75 @@
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     margin: 0 0 20px;
+    color:#c75c6f;
+}
+.goodbyement{
+    color: #525260;
+    font-size: 1.8rem;
+    margin: 0 0 20px;
+    padding-left:20px;
+    letter-spacing:-0.045em;
 }
 .FooterMain{
     display: flex;
     width: 100%;
     font-family: 'DM Sans', sans-serif;
     justify-content: space-between;
+    padding: 0 10px 30px; 
 
 }
+.contactWrap{
+    width: 60%;
+    border-right: 1px solid #c7c7d5;
+    padding: 0 40px 0 15px;
+    display: flex;
+    align-items: center;
+}
 .contact{
-    width: 70%;
+    width: 50%;
 }
-.goodbyement{
-    color: #525260;
-    font-size: 1.6rem;
-    margin: 0 0 40px;
+.contact>p{
+    font-size: 1.8rem;
 }
-.remind{
+
+.mailbtn{
     width: 30%;
 }
-.FooterBottom{
-    padding: 25px 0;
-    border-top:1px solid #c7c7d5;
-}
-.redirect{
+.remind{
+    width: 40%;
+    padding: 0 30px 0;
     font-size: 2.0rem;
     color:#292930;
     font-weight: 700;
+}
+.redirectsWrap{
+    display: flex;
+    position: relative;
+}
+.redirects{
+    font-size: 2.0rem;
+    color:#292930;
+    font-weight: 700;
+    width: 38%;
+}
+.replaybtn{
+    width: 50%;
+    top: 96%;
+    right: 0;
+    padding: 0 20px;
+    position: absolute;
+}
+.redirect{
+    font-size: 1.8rem;
+    color:#525260;
+    font-weight: 500;
+    transition: all 0.1s;
+}
+.redirect:hover{
+    font-weight: 600;
+}
+.FooterBottom{
+    padding: 25px 0;
+    border-top: 1px solid #c7c7d5;
+    text-align: center;
 }

@@ -54,13 +54,40 @@
     font-weight: 500;
     transition: all 0.3s;
     letter-spacing:-0.4;
-
 }
 .btnWhiteSmall:hover a{
     color:#ffffff;
 }
 .btnImg{
     width: 16%;
+    padding:2px;
+    vertical-align: bottom;
+}
+/* blueBtn */
+.btnBlue{
+    border-radius: 16px;
+    box-shadow: 0 44px 84px -24px #5956e9;
+    position: relative;
+    border:none;
+    background-color: #5956e9;
+    transition: all 0.5s;
+    margin: 2px;
+    padding: 16px 10px;
+    width: 100%;
+}
+.btnBlue a{
+    display: inline-block;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.3s;
+    letter-spacing:-0.4;
+}
+.btnBlue:hover{
+    background-color: #2522ba;
+}
+
+.btnImg{
+    width: 14%;
     padding:2px;
     vertical-align: bottom;
 }
