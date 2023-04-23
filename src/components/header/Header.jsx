@@ -1,13 +1,11 @@
-import React from "react";
+import React,{useRef, useState} from "react";
 import {Link} from "react-router-dom";
 import styles from "./Header.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import HamburgerMenu from "./HamburgerMenu";
 import Logo from "../../assets/Lottie"
 
-const Header=() => {
-
-  
+const Header=({appElement}) => {
 
     return(
         <header>
@@ -30,7 +28,7 @@ const Header=() => {
                             </ul>
                         </nav>
                 </InnerWrap>
-                <HamburgerMenu></HamburgerMenu>
+                <HamburgerMenu appElement={appElement}/>
             </div>
         </header>
     )

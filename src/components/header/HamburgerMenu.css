@@ -20,12 +20,24 @@
     margin: 3px auto;
     transition: width 0.5s;
 }
-
 span.longbar{
     width:60%;
 }
-
 span.shortbar{
     width: 30%;
     margin-right: 10px;
+}
+.hamburgerContent{
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    right: 0;
+    display: none;
+    transition: all 0.3s;
+}
+.open{
+    display:block;
+    width: 50vw;
 }

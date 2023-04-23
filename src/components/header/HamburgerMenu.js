@@ -1,28 +1,48 @@
-import React,{useState} from "react";
-import styles from './HamburgerMenu.module.css';
+import React,{useState,useRef} from "react";
+import './HamburgerMenu.css';
 
 
     
-const HamburgerMenu= () => {
+const HamburgerMenu= ({appElement}) => {
     const [hover, setHover] = useState(false);
-    
-    function mouseOver(){
-        setHover(true);
+    function mouseOver(){setHover(true);
     }
-    function mouseLeave(){
-        setHover(false);
+    function mouseLeave(){setHover(false);
+    }
+    // 햄버거메뉴
+    // const [app, setApp] = useState();
+
+    const hamburger = useRef();
+    function openBurger(){
+        hamburger.current.classList.add('open') 
+        console.log('click')
+        // setApp(true)
+        appElement(true)
+    }
+    function closeBurger(){
+        hamburger.current.classList.remove('open')
+        // setApp(false)
+        appElement(false)
     }
     return(
-        <div className={styles.hamburgerWrap}>
-            <button className={styles.hamburgerBtn} 
+        <div className="hamburgerWrap">
+            <button className="hamburgerBtn" 
             onMouseOver={mouseOver}
             onMouseLeave={mouseLeave}
+            onClick={openBurger}
             >
-                <span className={hover? styles.shortbar : styles.longbar}/>
+                <span className={hover? "shortbar" : "longbar"}/>
                 <span/>
-                <span className={hover? styles.longbar : styles.shortbar}/>
+                <span className={hover? "longbar" : "shortbar"}/>
             </button>
+            <div className="hamburgerContent" ref={hamburger}>
+                <div>hi</div>
+                <div>
+                    <button onClick={closeBurger}>X</button>
+                </div>
+            </div>
         </div>
+        
     )
 };
 
