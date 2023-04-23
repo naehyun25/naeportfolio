@@ -44,6 +44,9 @@ const HamburgerMenu= ({appElement}) => {
                         <hr/>
                         <div className="navMenus">
                             <p className="navMenu">
+                                <a href='#'onClick={closeBurger}>Home</a>
+                            </p>
+                            <p className="navMenu">
                                 <a href='#AboutMe'onClick={closeBurger}>About Me</a>
                             </p>
                             <p className="navMenu">
