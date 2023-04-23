@@ -43,10 +43,18 @@ const HamburgerMenu= ({appElement}) => {
                         <button className="closebtn" onClick={closeBurger}></button>
                         <hr/>
                         <div className="navMenus">
-                            <p className="navMenu"><a href='#AboutMe'>About Me</a></p>
-                            <p className="navMenu"><a href='#Skills'>Skills</a></p>
-                            <p className="navMenu"><a href='#Project'>Projects</a></p>
-                            <p className="navMenu"><a href='#Contact'>Contact Me</a></p>
+                            <p className="navMenu">
+                                <a href='#AboutMe'onClick={closeBurger}>About Me</a>
+                            </p>
+                            <p className="navMenu">
+                                <a href='#Skills'onClick={closeBurger}>Skills</a>
+                            </p>
+                            <p className="navMenu">
+                                <a href='#Project'onClick={closeBurger}>Projects</a>
+                            </p>
+                            <p className="navMenu">
+                                <a href='#Contact'onClick={closeBurger}>Contact Me</a>
+                            </p>
                         </div>
                         <hr/>
                         <div className="navContact">
