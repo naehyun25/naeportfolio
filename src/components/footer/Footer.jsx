@@ -19,7 +19,10 @@ const Footer =() => {
                             <p>naehyun25@gamil.com</p>
                         </div>
                         <div className={styles.mailbtn}>
-                            <ButtonBlue name="Send E-mail" link="/" font="fontEnglish" src={mail}/>
+                        
+                            <ButtonBlue name="Send E-mail" link="mailto:naehyun25@gamil.com" font="fontEnglish" src={mail}>
+
+                            </ButtonBlue>
                         </div>
                     </div>
                     <div className={styles.remind}>
@@ -28,7 +31,7 @@ const Footer =() => {
                             <div className={styles.replaybtn}>
                                 <ButtonBlue
                                     name="Replay"
-                                    link='/'
+                                    link='#'
                                     src={replay}
                                     font="fontEnglish"
                                 />
