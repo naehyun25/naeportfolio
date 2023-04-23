@@ -1,8 +1,8 @@
 .MainInfoWrap{
-    padding:140px 0 110px;
+    padding:140px 0 140px;
     margin: 0 auto;
     background: url("../../assets/info-background.png") no-repeat;
-    background-position-x: -2%;
+    background-position-x: 1%;
     background-position-y: -40%;
 }
 .title{

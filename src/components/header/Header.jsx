@@ -24,9 +24,9 @@ const Header=() => {
                             <ul className={styles.navMenu}>
                                 <li><a href='#'>Home</a></li>
                                 <li><a href='#AboutMe'>About Me</a></li>
-                                <li><a href='#Project'>Projects</a></li>
                                 <li><a href='#Skills'>Skills</a></li>
-                                <li><a href='#'>Contact Me</a></li>
+                                <li><a href='#Project'>Projects</a></li>
+                                <li><a href='#Contact'>Contact Me</a></li>
                             </ul>
                         </nav>
                 </InnerWrap>

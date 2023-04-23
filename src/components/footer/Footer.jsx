@@ -8,7 +8,7 @@ import mail from '../../assets/mail-icon.png';
 
 const Footer =() => {
     return(
-        <div className={styles.FooterWrap}>
+        <div id="Contact" className={styles.FooterWrap}>
             <InnerWrap>
                 <p className={styles.title}>Contact ME,</p>
                 <p className={styles.goodbyement}>Thank you for watching,</p>

@@ -22,10 +22,12 @@
 }
 .skillIcons{
     display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
 .skillIcon{
-    width: 100px;
-    height: 100px;
+    width: 8%;
+    height: 8%;
     filter: grayscale(100%);
     transition: all 1s;
     padding: 10px;

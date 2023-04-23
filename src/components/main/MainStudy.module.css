@@ -1,0 +1,126 @@
+.MainStudyWrap{
+    padding: 110px 0 140px;
+    position: relative;
+    background: url("../../assets/background-pink-line.png") no-repeat;
+    background-position-x: 100%;
+}
+.pinkCircle{
+    width:90px;
+    height: 90px;
+    background : url(../../assets/circle-pink.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    left: 12%;
+    z-index: -1;
+}
+
+.yellowCircle{
+    width:120px;
+    height: 120px;
+    background : url(../../assets/circle-yellow.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 76%;
+    left: 82%;
+    z-index: -1;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 15px;
+    color:#c75c6f;
+    text-align: center;
+}
+.subTitle{
+    color:#292930;
+    font-size: 5.6rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;
+    font-family: "pretendard", sans-serif;
+    text-align: center;
+}
+.titleDesc{
+    font-size: 1.8rem;
+    color : #525260;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.studyContents{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.studyContent{
+    width: 50%;
+    display: flex;
+    border-top:1px solid #e3e6e9;
+    border-right: 1px solid #e3e6e9;
+    border-bottom: 1px solid #e3e6e9;
+    transition: all 0.3s;
+    padding: 40px 20px 40px 0;
+    align-items: center;
+}
+.studyContent:hover{
+    border-top:1px solid #5956e9;
+}
+.studyContent:hover img{
+    transform: scale(1.1);
+    border-radius: 30px;
+}
+.errorContent{
+    width: 50%;
+    display: flex;
+    border-top:1px solid #e3e6e9;
+    border-bottom: 1px solid #e3e6e9;
+    transition: all 0.3s;
+    padding: 40px 0 40px 20px;
+    align-items: center;
+}
+.errorContent:hover{
+    border-top:1px solid #5956e9;
+}
+.errorContent:hover img{
+    transform: scale(1.1);
+    border-radius: 30px;
+}
+.imgWrap{
+    width:40%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 100%;
+}
+.img{
+    max-width:100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.textWrap{
+    margin-left: 20px;
+    width: 60%;
+}
+.contentTitle{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: 'DM Sans', sans-serif;
+    color:#292930;
+    margin-top: 0;
+}
+.contentTitle:hover{
+    color: #2522ba;
+}
+.contentSubTitle{
+    color:#999fae;
+    margin-bottom: 30px;
+}
+.direct{
+    color:#292930;
+    font-weight: 500;
+}
+.direct:hover{
+    color:#2522ba;
+}
