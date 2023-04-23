@@ -29,7 +29,7 @@ const MainSkill = () => {
         };
       
     return(
-        <div className={styles.mainSkillWrap}>
+        <div id="Skills" className={styles.mainSkillWrap}>
             <InnerWrap>
                 <h2 className={styles.mainSkillTitle}>My Skills</h2>
                 <div className={styles.skillbarWrap}>

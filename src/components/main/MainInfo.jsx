@@ -44,7 +44,7 @@ const MainInfo = () => {
     },[])
 
     return(
-        <div className={styles.MainInfoWrap} ref={MainInfoWrap}>
+        <div id="AboutMe" className={styles.MainInfoWrap} ref={MainInfoWrap}>
             <InnerWrap>
                 <div className={styles.MainIntroduction}>
                     <h2 className={styles.title}>About Me</h2>

@@ -37,7 +37,7 @@ import circlePink from "../../assets/circle-pink.png";
     let { title, imgUrl, number, skills, date, contribution, page, tech, deploy, aGithub,aVisit,aDesc,btnName} = props;
   
     return (
-      <div className={styles.projectCard} onMouseOver={ImgScroll} onMouseLeave={ImgScrollOff}>
+      <div id="Project" className={styles.projectCard} onMouseOver={ImgScroll} onMouseLeave={ImgScrollOff}>
         <div className={styles.projectImgWrap}>
           <div className={styles.imgCover} ref={imgCover} style={{opacity:visual, transition:"all 0.5s"}}></div>
           <div className={styles.descWrap}>
@@ -76,10 +76,10 @@ import circlePink from "../../assets/circle-pink.png";
       </div>
     );
   };
-const MainProject = (hover) => {console.log(hover)
+const MainProject = () => {
     return(
         <>
-            <div className={styles.MainProjectWrap}>
+            <div id="Project" className={styles.MainProjectWrap}>
                 <InnerWrap>
                     <h2>Project</h2>
                     <p className={styles.subTitle}>작업한 프로젝트</p>
