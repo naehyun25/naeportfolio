@@ -15,12 +15,14 @@ const HamburgerMenu= ({appElement}) => {
     const hamburger = useRef();
     function openBurger(){
         hamburger.current.classList.add('open') 
+        hamburger.current.firstChild.classList.add('layerOpen')
         console.log('click')
         // setApp(true)
         appElement(true)
     }
     function closeBurger(){
         hamburger.current.classList.remove('open')
+        hamburger.current.firstChild.classList.remove('layerOpen')
         // setApp(false)
         appElement(false)
     }
@@ -35,11 +37,33 @@ const HamburgerMenu= ({appElement}) => {
                 <span/>
                 <span className={hover? "longbar" : "shortbar"}/>
             </button>
-            <div className="hamburgerContent" ref={hamburger}>
-                <div>hi</div>
-                <div>
-                    <button onClick={closeBurger}>X</button>
+            <div className="hamburgerContents" ref={hamburger}>
+                <div className="layer">
+                    <div className="contentWrap">
+                        <button className="closebtn" onClick={closeBurger}></button>
+                        <hr/>
+                        <div className="navMenus">
+                            <p className="navMenu"><a href='#AboutMe'>About Me</a></p>
+                            <p className="navMenu"><a href='#Skills'>Skills</a></p>
+                            <p className="navMenu"><a href='#Project'>Projects</a></p>
+                            <p className="navMenu"><a href='#Contact'>Contact Me</a></p>
+                        </div>
+                        <hr/>
+                        <div className="navContact">
+                            <div className="available">
+                                <p className="availavbTitle">I'm Ready to Work.</p>
+                                <p className="days">Always</p>
+                                <p className="time">Contact Me,</p>
+                            </div>
+                            <div className="contacts">
+                                <p className="contactTitle">Information</p>
+                                <p className="contactEmail">E-mail.&nbsp; naehyun25@gmail.com</p>
+                                <p className="contactNumber">HP.  &nbsp; 010 - 5800 - 2443</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
         
