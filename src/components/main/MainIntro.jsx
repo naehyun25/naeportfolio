@@ -18,7 +18,8 @@ const MainIntro = () => {
     return(
         <div id="MainIntro" className={styles.mainIntroWrap}>
             <div className={styles.backGroundWrap}>
-                <div className={styles.img3Dbottom}></div>
+                <div className={styles.img3Dbottom}>
+                </div>
                 <div className={styles.donutTop}>                
                     <DonutTop />
                 </div>

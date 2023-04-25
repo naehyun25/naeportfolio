@@ -35,6 +35,30 @@
 .fontKorean{
     font-family: "pretendard", sans-serif;
 }
+@media (max-width: 1440px) {
+    .btn a{
+        padding: 28px;
+    }
+    .btnImg{
+        width: 18%;
+    }
+}
+@media (max-width: 1200px) {
+    .btn a{
+        padding: 24px 16px;
+    }
+    .btnImg{
+        width: 18%;
+    }
+}
+@media (max-width: 990px) {
+    .btn a{
+        padding: 18px 16px;
+    }
+    .btnImg{
+        width: 14%;
+    }
+}
 /* WhiteBtnSmall */
 .btnWhiteSmall{
     border-radius: 20px;

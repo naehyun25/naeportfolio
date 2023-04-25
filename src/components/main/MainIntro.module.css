@@ -24,18 +24,18 @@ circle 1.2
     background-color: #2522BA;
     border-radius: 60px;
     position: relative;
-    /* height: 78vh; */
     min-height:840px;
 }
 .profileImg{
-    width: 32%;
-    /* 29%; 왠만하면 건들지 말것 */
+    height:104%;
     position: absolute;
     z-index: 4;
     left: 55%;
-    bottom: -0.5%;
+    bottom:0;
 }
-.profileImg > img{width: 100%;}
+.profileImg > img{
+    height: 100%;
+}
 .mainBanner{
     display: flex;
     justify-content: center;
@@ -72,13 +72,15 @@ circle 1.2
 }
 .img3Dbottom{
     z-index: 3;
-    width: 33%;
+    width: 34%;
     height: 40%;
     background: url("../../assets/banner-shape-2.png") no-repeat;
     left:0;
     bottom: 0;
     position: absolute;
     border-bottom-left-radius: 60px;
+    background-size: contain;
+    background-position: left bottom;
 }
 .backGroundWrap li{
     display: block;
@@ -89,7 +91,7 @@ circle 1.2
 }
 .backGroundWrap .static{
     z-index: 2;
-    width: 33%;
+    width: 30%;
     height: 40%;
     background: url("../../assets/circle-half.png") no-repeat;
     left:71%;
@@ -166,6 +168,53 @@ circle 1.2
     81% {transform: translate(-1000%,400%);}
     100% {transform: translate(-1120%,900%);}
 }
-
+@media (max-width: 1810px) {
+    .backGroundWrap .static{
+        width: 25%;
+        height: 40%;
+    }
+  }
+@media (max-width: 1440px) {
+  .mainIntroWrap{
+      min-height: 0;
+  }
+  .donutTop{
+      visibility: hidden;
+  }
+  .donutBottom{
+      top: -10%;
+      left: 60%;
+  }
+  .bannerDesc p, span{
+    font-size: 6.8rem;
+    font-weight: 700;
+}
+}
+@media (max-width: 1200px) {
+    .bannerDesc{
+        padding: 0% 2% 18%;
+    } 
+    .bannerDesc p, span{
+        font-size: 6rem;
+        font-weight: 700;
+    }
+}
+@media (max-width: 990px) {
+    .bannerDesc p, span{
+        font-size: 5.2rem;
+        font-weight: 700;
+    }
+    .btns{
+        flex-direction: column;
+        width: 30%;
+        margin-left: 130px;
+    }
+    .profileImg{
+        left: 46%;
+    }
+    .bannerDesc{
+        padding: 0% 2% 6%;
+    } 
+}
 
 
