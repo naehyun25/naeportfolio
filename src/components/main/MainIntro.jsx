@@ -47,7 +47,7 @@ const MainIntro = () => {
                         <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}
                         font="fontEnglish" link="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388"/>
                         <ButtonWhite name="Resume" src={resume} srcWhite={resumeWhite}
-                        font="fontEnglish" link="https://drive.google.com/file/d/1Lzj61MALshn46uLhwsr4767gJ7tWzVvS/view?usp=sharing"/>
+                        font="fontEnglish" link="https://drive.google.com/file/d/1Ss_QfNIaVoCXQ8CghaOtUFckhfvaZUl-/view?usp=sharing"/>
                     </div>
                 </div>
                 
