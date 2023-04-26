@@ -12,6 +12,7 @@ import nodeIcon from "../../assets/nodeJs-icon.png";
 import vscodeIcon from "../../assets/vscode-icon.png";
 import googleIcon from "../../assets/googledocs-icon.png";
 import figmaIcon from "../../assets/figma-icon.png";
+import viewIcon from "../../assets/view-icon.png";
 
 const MainSkill = () => {
     const skills = [
@@ -19,7 +20,7 @@ const MainSkill = () => {
         { type: 'CSS', level: 80 },
         { type: 'JavaScript', level: 70 },
         { type: 'React', level: 70 },
-        { type: 'JavaScript', level: 70 },
+        { type: 'Vue', level: 50 },
       ];
       const colors = {
         bar: '#fffaaa',
@@ -41,6 +42,7 @@ const MainSkill = () => {
                     <div className={styles.skillIcon}><img src={cssIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={jsIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={reactIcon} alt=""/></div>
+                    <div className={styles.skillIcon}><img src={viewIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={sassIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={nodeIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={figmaIcon} alt=""/></div>

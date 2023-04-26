@@ -44,3 +44,17 @@
 .skillIcon Img{
     width: 100%;
 }
+@media (max-width: 990px) {
+    .skillIcons{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .skillIcon{
+        width:10%
+    }
+}
+@media (max-width: 768px) {
+    .skillIcon{
+        min-width:72px;
+    }
+}
