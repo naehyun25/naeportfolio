@@ -28,17 +28,19 @@ span.shortbar{
     margin-right: 10px;
 }
 .hamburgerContents{
-    width: 0vw;
+    width: 0vh;
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.5);
     top: 0;
     right: 0;
     visibility: hidden;
+    display: none;/*  최종배포시 삭제 */
 }
 .open{
     visibility:visible;
     width: 100vw;
+    display: block;/*  최종배포시 삭제 */
 }
 .layer{
     position: absolute;
@@ -48,16 +50,16 @@ span.shortbar{
     background-color: rgba(255,255,255,1);
     top: 0;
     right: 0;
-    transition: all 0.3s;
+    transition: all 0.6s;
 }
 .layerOpen{
     width: 58vw;
     visibility: visible;
 }
-.contentWrap{
+.layerOpen .contentWrap{
     padding: 100px;
 }
-.closebtn{
+.layerOpen .closebtn{
     width: 20px;
     height: 20px;
     border: none;
@@ -66,13 +68,13 @@ span.shortbar{
     margin-bottom: 30px ;
     cursor: pointer;
 }
-.navMenus{
+.layerOpen .navMenus{
     padding: 20px;
 }
-.navMenu{
+.layerOpen .navMenu{
     margin:30px 0;
 }
-.navMenu>a{
+.layerOpen .navMenu>a{
     color:#27272E;
     font-size: 3.6rem;
     font-weight: 500;
@@ -80,25 +82,64 @@ span.shortbar{
     transition: all 0.3s;
     font-family: 'DM Sans', sans-serif;
 }
-.navMenu:hover>a{
+.layerOpen .navMenu:hover>a{
     color:#5956e9
 }
-.navContact{
+.layerOpen .navContact{
     display: flex;
     justify-content: center;
     margin: 40px 10px;
     color:#525260;
 }
-.navContact p{
+.layerOpen .navContact p{
     color:#525260;
     font-family: 'DM Sans', sans-serif;
 }
-.contacts{width: 50%;}
-.available{width: 50%;}
-.availavbTitle,.contactTitle{
+.layerOpen .contacts{width: 50%;}
+.layerOpen .available{width: 50%;}
+.layerOpen .availavbTitle,.contactTitle{
     color:#27272e;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1;
     margin-bottom:15px;
+}
+@media (max-width: 990px) {
+    .layerOpen .navContact{
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 10px;
+        color:#525260;
+    }
+    .layerOpen .contentWrap{
+        padding: 68px;
+    }
+    .layerOpen .contacts{width: 100%;}
+    .layerOpen .available{width: 100%;}
+    .contactNumber{
+        line-height: 16px;
+        -webkit-line-clamp: 2;
+        word-wrap: break-word
+    }
+    .layerOpen .navMenu>a{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px) {
+    .hamburgerWrap{
+        width: 50px;
+        height: 50px;
+    }
+    .hamburgerBtn{
+        width:50px;
+        height: 50px;
+    }
+    .layerOpen .availavbTitle,.contactTitle{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 576px) {
+    .layerOpen .contentWrap{
+        padding: 40px;
+    }
 }

@@ -56,7 +56,18 @@
         padding: 18px 16px;
     }
     .btnImg{
-        width: 14%;
+        width: 16%;
+    }
+}
+@media (max-width: 768px) {
+    .btn a{
+        padding: 7px 0px;
+    }
+    .btnImg{
+        width: 18px;
+    }
+    .btn{
+        border-radius: 12px;
     }
 }
 /* WhiteBtnSmall */

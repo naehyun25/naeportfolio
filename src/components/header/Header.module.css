@@ -71,6 +71,13 @@ nav{
 }
 @media (max-width: 990px) {
     .navMenu{
-        visibility: hidden;
+        display: none;
+    }
+    header{
+        border-bottom:none;
+        padding: 20px 0 0
+    }
+    .headerWrap{
+        padding: 0;
     }
 }
