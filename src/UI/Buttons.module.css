@@ -102,6 +102,11 @@
     padding:2px;
     vertical-align: bottom;
 }
+@media (max-width: 576px) {
+    .btnSmallImg{
+        display: none;
+    }
+}
 /* blueBtn */
 .btnBlue{
     border-radius: 16px;

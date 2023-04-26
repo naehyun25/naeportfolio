@@ -195,4 +195,10 @@ circle -1
     .MainInfoWrap{
         padding:100px 0;
     }
+    .circleYellow{
+        width: 100px;
+        height: 100px;
+        top: -24%;
+        left: 0%;
+    }
 } 

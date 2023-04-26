@@ -87,4 +87,11 @@ nav{
         padding: 22px 0;
     }
 }
+@media (max-width: 476px) {
+    header{
+        border-bottom:none;
+        padding: 22px 0;
+    }
+}
+
 
