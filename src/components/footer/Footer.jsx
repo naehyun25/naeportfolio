@@ -19,7 +19,6 @@ const Footer =() => {
                             <p>naehyun25@gamil.com</p>
                         </div>
                         <div className={styles.mailbtn}>
-                        
                             <ButtonBlue name="Send E-mail" link="mailto:naehyun25@gamil.com" font="fontEnglish" src={mail}>
 
                             </ButtonBlue>

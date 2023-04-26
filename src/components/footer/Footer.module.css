@@ -37,7 +37,6 @@
 .contact>p{
     font-size: 1.8rem;
 }
-
 .mailbtn{
     width: 30%;
 }
@@ -78,4 +77,37 @@
     padding: 25px 0;
     border-top: 1px solid #c7c7d5;
     text-align: center;
+}
+@media (max-width: 1440px) {
+    .contactWrap{
+        width: 50%;
+    }
+    .remind{
+        width: 50%;
+    }
+}
+@media (max-width: 1200px) {
+    .replaybtn{
+        display: none;
+    }
+    .mailbtn{
+        display: none;
+    }
+    .redirects{
+        width: 100%;}
+}
+@media (max-width: 768x) {
+    .contact>p{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 576px) {
+    .FooterMain{
+        flex-direction: column;
+    }
+    .contactWrap{
+        width: 100%;
+        border: none;
+    }
+    .remind{width: 100%;}
 }

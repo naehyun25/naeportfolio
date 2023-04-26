@@ -132,3 +132,8 @@
     padding:2px;
     vertical-align: bottom;
 }
+@media (max-width: 1440px) {
+    .btnBlueImg{
+        display: none;
+    }
+}
