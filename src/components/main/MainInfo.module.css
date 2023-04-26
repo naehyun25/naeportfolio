@@ -192,4 +192,7 @@ circle -1
     .boxTitle{
         font-size: 2.0rem;
     }
+    .MainInfoWrap{
+        padding:100px 0;
+    }
 } 

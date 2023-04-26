@@ -34,29 +34,25 @@ import circlePink from "../../assets/circle-pink.png";
         setVisual(0)
     }
     
-    let { title, imgUrl, number, skills, date, contribution, page, tech, deploy, aGithub,aVisit,aDesc,btnName} = props;
+    let { title, imgUrl, number, skills, date, contribution, page, tech, deploy, aGithub,aVisit} = props;
   
     return (
       <div id="Project" className={styles.projectCard} onMouseOver={ImgScroll} onMouseLeave={ImgScrollOff}>
         <div className={styles.projectImgWrap}>
           <div className={styles.imgCover} ref={imgCover} style={{opacity:visual, transition:"all 0.5s"}}></div>
           <div className={styles.descWrap}>
-            {/* <p> {content} </p> */}
             <p>제작기간 {date} </p>
             <p>본인기여도 {contribution}</p>
-            <p>
-              페이지 <br />
+            <p>페이지 <br />
               {page}
             </p>
-            <p>
-            Features<br />
+            <p>Features<br />
               {tech}
             </p>
             <p>배포 {deploy}</p>
             <div className={styles.btnWrap}>
               <ButtonWhiteSmall name="Github" font="fontEnglish" src={github} srcWhite={githubWhite} link={aGithub}/>
               <ButtonWhiteSmall name={props.btnName} font="fontEnglish" src={deployIcon} srcWhite={deployWhite} link={aVisit} />
-              {/* <ButtonWhiteSmall name="상세페이지"  font="fontKorean" src={deployIcon} srcWhite={deployWhite} link={aDesc}/> */}
             </div>
           </div>
           <div className={styles.projectImgCover}>

@@ -1,5 +1,5 @@
 .MainStudyWrap{
-    padding: 110px 0 140px;
+    padding: 110px 0 110px;
     position: relative;
     background: url("../../assets/background-pink-line.png") no-repeat;
     background-position-x: 100%;
@@ -162,5 +162,8 @@
     .textWrap{
         margin: 0;
         padding-top: 16px;
+    }
+    .MainStudyWrap{
+        padding: 100px 0;
     }
 }

@@ -75,9 +75,16 @@ nav{
     }
     header{
         border-bottom:none;
-        padding: 20px 0 0
+        padding: 20px 0;
     }
     .headerWrap{
         padding: 0;
     }
 }
+@media (max-width: 576px) {
+    header{
+        border-bottom:none;
+        padding: 22px 0;
+    }
+}
+
