@@ -64,19 +64,23 @@ const MainInfo = () => {
                         <img src={circlePink} alt="" 
                         className={`${styles.circlePink} circle`}
                         />
-                        <p className={styles.boxTitle}>
-                            Info
-                        </p>
-                        <div className={styles.boxContent}>
-                            <p>1989 . 02 . 25</p>
-                            <p>010 - 5800 - 2443</p>
+                        <div className={styles.infoPadding}>
+                            <p className={styles.boxTitle}>
+                                Info
+                            </p>
+                            <div className={`${styles.boxContent} ${styles.smallBoxContent}`}>
+                                <p>1989 . 02 . 25</p>
+                                <p>010 - 5800 - 2443</p>
+                            </div>
                         </div>
-                        <p className={styles.boxTitle}>
-                            Licence
-                        </p>
-                        <div className={styles.boxContent}>
-                            <p>자동차운전면허 2종</p>
-                            <p>중등교사 자격증(농업생명계열)</p>
+                        <div className={styles.licencePadding}>
+                            <p className={styles.boxTitle}>
+                                Licence
+                            </p>
+                            <div className={`${styles.boxContent} ${styles.smallBoxContent}`}>
+                                <p>자동차운전면허 2종</p>
+                                <p>중등교사 자격증(농업생명계열)</p>
+                            </div>
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxHistory}`}>
@@ -86,12 +90,16 @@ const MainInfo = () => {
                         <p className={styles.boxTitle}>
                             History
                         </p>
-                        <div className={styles.boxContent}>
+                        <div className={`${styles.boxContent} ${styles.fullBoxContent}`}>
+                            <div className={styles.historyPadding}>
                             <p className={styles.date}>2008.03 ~ 2012.08</p>
-                            <p>충북대학교 축산학과 졸업</p>
-                            <p>교육학 복수전공</p>
+                                <p>충북대학교 축산학과 졸업</p>
+                                <p>교육학 복수전공</p>
+                            </div>
+                            <div className={styles.historyPadding}>
                             <p className={styles.date}>2014.09 ~ 2022.07 (7년 11개월)</p>
-                            <p>(주) 태성트레이딩 근무</p>
+                                <p>(주) 태성트레이딩 근무</p>
+                            </div>
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxEducation}`}>
@@ -101,11 +109,17 @@ const MainInfo = () => {
                         <p className={styles.boxTitle}>
                             Education
                         </p>
-                        <div className={styles.boxContent}>
-                            <p className={styles.date}> 2022.11 ~ 2023.05</p>
-                            <p>프로젝트 기반 프론트엔드(React&Vue) <br/>웹&앱 SW개발자 양성과정</p>
-                            <p className={styles.date}>2022.11 ~ 2022.12</p>
-                            <p>디지털역량 제고를 위한 <br/>웹구조 언어&웹 스타일링 언어 기초</p>
+                        <div className={`${styles.boxContent} ${styles.fullBoxContent}`}>
+                            <div className={styles.eduPadding}>
+                                <p className={styles.date}> 2022.11 ~ 2023.05</p>
+                                <p>프로젝트 기반 프론트엔드(React&Vue) </p>
+                                <p>웹&앱 SW개발자 양성과정</p>
+                            </div>
+                            <div className={styles.eduPadding}>
+                                <p className={styles.date}>2022.11 ~ 2022.12</p>
+                                <p>디지털역량 제고를 위한 </p>
+                                <p>웹구조 언어&웹 스타일링 언어 기초</p>
+                            </div>
                         </div>
                     </div>
                 </div>

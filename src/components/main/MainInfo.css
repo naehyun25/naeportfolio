@@ -7,3 +7,14 @@
     font-family: "pretendard", sans-serif;
     padding-top: 1rem;
 } 
+@media (max-width: 768px) {
+    .title>div{
+        color:#292930;
+        font-size: 4.6rem;
+    }
+}
+@media (max-width: 576px){
+    .title>div{
+        font-size: 3.6rem;
+    }
+} 
