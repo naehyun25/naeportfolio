@@ -9,7 +9,6 @@ function App() {
 
   const hamburgerEffect = useRef();
   function appElement(data){
-    console.log(data)
     data?  hamburgerEffect.current.classList.add('hamburgerOpen') :
     hamburgerEffect.current.classList.remove('hamburgerOpen');
   }

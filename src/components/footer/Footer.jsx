@@ -20,13 +20,12 @@ const Footer =() => {
                         </div>
                         <div className={styles.mailbtn}>
                             <ButtonBlue name="Send E-mail" link="mailto:naehyun25@gamil.com" font="fontEnglish" src={mail}>
-
                             </ButtonBlue>
                         </div>
                     </div>
                     <div className={styles.remind}>
                         <div className={styles.redirectsWrap}>
-                            <p className={styles.redirects}>"윤내현" 다시보기</p>
+                            <div className={styles.redirects}>"윤내현" 다시보기</div>
                             <div className={styles.replaybtn}>
                                 <ButtonBlue
                                     name="Replay"

@@ -9,21 +9,16 @@ const HamburgerMenu= ({appElement}) => {
     }
     function mouseLeave(){setHover(false);
     }
-    // 햄버거메뉴
-    // const [app, setApp] = useState();
 
     const hamburger = useRef();
     function openBurger(){
         hamburger.current.classList.add('open') 
         hamburger.current.firstChild.classList.add('layerOpen')
-        console.log('click')
-        // setApp(true)
         appElement(true)
     }
     function closeBurger(){
         hamburger.current.classList.remove('open')
         hamburger.current.firstChild.classList.remove('layerOpen')
-        // setApp(false)
         appElement(false)
     }
     return(

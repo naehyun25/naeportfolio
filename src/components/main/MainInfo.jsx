@@ -24,7 +24,6 @@ const MainInfo = () => {
     const MainInfoWrap = useRef(null);
     useLayoutEffect(()=>{
         let moving = gsap.context((self) => {
-            console.log(self)
             const circles = self.selector(".circle");
             circles.forEach((circle)=>{
                 gsap.to(circle,5,{

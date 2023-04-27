@@ -19,8 +19,8 @@ const MainSkill = () => {
         { type: 'HTML', level: 90 },
         { type: 'CSS', level: 80 },
         { type: 'JavaScript', level: 70 },
+        { type: 'jQuery', level: 70 },
         { type: 'React', level: 70 },
-        { type: 'Vue', level: 50 },
       ];
       const colors = {
         bar: '#fffaaa',
