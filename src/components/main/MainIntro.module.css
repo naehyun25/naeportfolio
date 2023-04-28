@@ -179,7 +179,7 @@ circle 1.2
       min-height: 0;
   }
   .donutTop{
-      visibility: hidden;
+      display: none;
   }
   .donutBottom{
       width: 46%;
@@ -245,6 +245,9 @@ circle 1.2
     }
     .profileImg{
         height:90%;
+    }
+    .donutBottom{
+        left:48%;
     }
 }
 
