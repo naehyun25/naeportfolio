@@ -106,6 +106,13 @@
     .btnSmallImg{
         display: none;
     }
+    .btnWhiteSmall a{
+        padding: 8px 0;
+    }
+    .btnWhiteSmall{
+        border-radius: 14px;
+        width: 22%;
+    }
 }
 /* blueBtn */
 .btnBlue{
