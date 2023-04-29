@@ -201,4 +201,8 @@ h2{
     .btnWrap{
         margin-top: 14px;
     }
+    .projectCard{
+        height: 456px;
+        margin-bottom: 46px;
+    }
 }

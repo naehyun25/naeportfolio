@@ -70,6 +70,12 @@
         border-radius: 12px;
     }
 }
+@media (max-width: 476px) {
+    .btnImg{
+        display: none;
+    }
+    
+}
 /* WhiteBtnSmall */
 .btnWhiteSmall{
     border-radius: 20px;

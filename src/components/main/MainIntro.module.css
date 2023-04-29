@@ -250,7 +250,15 @@ circle 1.2
         left:48%;
     }
 }
-
-
+@media (max-width: 476px) {
+    .btns {
+        width: 34%;
+        margin-left: 28px;
+    }
+    .profileImg{    
+        left: 48%;
+        height: 76%;
+    }
+}
 
 
