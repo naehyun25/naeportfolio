@@ -42,15 +42,15 @@ import circlePink from "../../assets/circle-pink.png";
         <div className={styles.projectImgWrap}>
           <div className={styles.imgCover} ref={imgCover} style={{opacity:visual, transition:"all 0.5s"}}></div>
           <div className={styles.descWrap}>
-            <p>제작기간 {date} </p>
-            <p>본인기여도 {contribution}</p>
-            <p>페이지 <br />
+            <p><span className={styles.descTitle}>제작기간  </span> {date} </p>
+            <p><span className={styles.descTitle}>본인기여도  </span> {contribution}</p>
+            <p><span className={styles.descTitle}>페이지</span><br />
               {page}
             </p>
-            <p>Features<br />
+            <p><span className={styles.descTitle}>Features</span><br />
               {tech}
             </p>
-            <p>배포 {deploy}</p>
+            <p><span className={styles.descTitle}>배포</span> {deploy}</p>
             <div className={styles.btnWrap}>
               <ButtonWhiteSmall name="Github" font="fontEnglish" src={github} srcWhite={githubWhite} link={aGithub}/>
               <ButtonWhiteSmall name={props.btnName} font="fontEnglish" src={deployIcon} srcWhite={deployWhite} link={aVisit} />
@@ -84,7 +84,7 @@ const MainProject = () => {
                       <ProjectCard 
                           number="01"
                           title="독립기념관 리뉴얼"
-                          skills="HTML, CSS, JS, JQuery"
+                          skills="JS, JQuery, HTML, CSS"
                           imgUrl={project1}
                           date="3주"
                           contribution="100%"
@@ -98,7 +98,7 @@ const MainProject = () => {
                       <ProjectCard
                           number="02"
                           title="독립기념관 리뉴얼 (ver.PHP)"
-                          skills="HTML, CSS, JS, JQuery, PHP"
+                          skills="PHP, JS, JQuery, HTML, CSS "
                           imgUrl={projectphp1}
                           date="1주"
                           contribution="100%"
@@ -106,13 +106,13 @@ const MainProject = () => {
                           tech = "PHP게시판(CRUD), PHP로그인구현"
                           deploy = "Dothome"
                           aGithub = "https://github.com/naehyun25/project1-ver2"
-                          aVisit = "http://naeh.dothome.co.kr/index.php"
+                          aVisit = "http://naeh.dothome.co.kr/index_board.php"
                           btnName="Visit"
                       />
                       <ProjectCard
                           number="03"
                           title="Team . ticatalk"
-                          skills="HTML, CSS, JS, Scss, Bootstrap"
+                          skills="Scss, Bootstrap, JS, HTML, CSS"
                           imgUrl={project2}
                           date="2주"
                           contribution="20% (총원 5명)"
