@@ -34,37 +34,7 @@
     position: relative;
     margin: 0 auto;
 }
-.projectNumber{
-    color : #c75c6f;
-    font-size: 2.0rem;
-    position: absolute;
-    top: 6%;
-}
-.circlePink{
-    position: absolute;
-    width: 100%;
-    opacity:0.3;
-    top: 40%;
-    left: 20%;
-}
-.projectTitle{
-    color:#292930;
-    font-size: 3.2rem;
-    font-weight: 500;
-    font-family: "pretendard", sans-serif;
-    position: relative;
-    top: -1rem;
-    left: 10%;
-}
-.fontEnglish{
-    font-family: 'DM Sans', sans-serif;
-}
-.projectSkills{
-    color:#C75C6F;/* #525260; */
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 0;
-}
+
 
     /* btn cover */
 .imgCover{
@@ -88,6 +58,47 @@
 .projectCard:hover .imgCover{ z-index: 1;}
 .projectCard:hover .descWrap{opacity:1; z-index: 2;}
 
+.projectNumber{
+    color : #c75c6f;
+    font-size: 2.0rem;
+    position: absolute;
+    top: 6%;
+}
+.circlePink{
+    position: absolute;
+    width: 100%;
+    opacity:0.3;
+    top: 40%;
+    left: 20%;
+}
+.projectTitle{
+    color:#292930;
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: "pretendard", sans-serif;
+    position: relative;
+    top: -1rem;
+    left: 10%;
+}
+.projectContent{
+    color : #525260;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: "pretendard", sans-serif;
+    margin:0px;
+    padding-left:10%;
+    
+}
+.fontEnglish{
+    font-family: 'DM Sans', sans-serif;
+}
+.projectSkills{
+    color:#C75C6F;/* #525260; */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+    padding-left:10%;
+}
 .descWrap p{
     color : #ffffff;
     font-size: 1.6rem;
@@ -99,6 +110,7 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
+
 .btnWrap{
     display: flex;
     justify-content: center;
@@ -162,6 +174,10 @@ h2{
     .projectTitle{
         font-size: 2.4rem;
     }
+    .projectContent{
+        font-size: 2.0rem;
+        
+    }
     .projectDescWrap{
         padding: 40px 38px 20px;
     }
@@ -210,7 +226,7 @@ h2{
         margin-bottom: 46px;
     }
     .projectImgCover{
-        min-height: 328px;
+        height: 328px;
     }
 
 }

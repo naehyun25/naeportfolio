@@ -10,11 +10,11 @@
 @media (max-width: 768px) {
     .title>div{
         color:#292930;
-        font-size: 4.6rem;
+        font-size: 4.0rem;
     }
 }
 @media (max-width: 576px){
     .title>div{
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
 } 

@@ -187,10 +187,10 @@ circle -1
 }
 @media (max-width: 576px){
     .subTitle{
-        font-size: 3.6rem;
+        font-size: 3.4rem;
     }
     .boxTitle{
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
     .MainInfoWrap{
         padding:100px 0;
@@ -200,5 +200,19 @@ circle -1
         height: 100px;
         top: -24%;
         left: 0%;
+    }
+    .boxContent p{
+        font-size: 1.4rem;
+    }
+} 
+
+@media (max-width: 476px){
+    .boxContent p{
+        font-size: 1.4rem;
+        letter-spacing: 0.4px;
+        padding-left: 20px;
+    }
+    .boxContent .date{
+        padding: 0 0 0 14px;
     }
 } 

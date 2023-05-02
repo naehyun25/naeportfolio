@@ -170,3 +170,20 @@
         left: 64%;
     }
 }
+@media (max-width: 576px) {
+    .title{
+        font-size:2rem;
+    }
+    .subTitle{
+        font-size: 3.2rem;
+    }
+    .titleDesc{
+        font-size: 1.6rem;
+    }
+    .textWrap{
+        padding-bottom:16px;
+    }
+    .imgWrap{
+        margin-top: 16px;
+    }
+}
