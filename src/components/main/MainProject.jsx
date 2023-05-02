@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import styles from "./MainProject.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import project1 from "../../assets/project1.jpg";
+// import projectphp1 from "../../assets/projectphp1.png";
+import projectphp1 from "../../assets/projectphp1.gif";
 import project2 from "../../assets/project2.jpg";
 import project3 from "../../assets/project3.jpg";
 import project4Gif from "../../assets/project4.gif";
-import project4 from "../../assets/project4.png";
 import { ButtonWhiteSmall } from "../../UI/Buttons";
 import github from "../../assets/github-icon.png";
 import githubWhite from "../../assets/github-white-icon.png";
@@ -83,7 +84,6 @@ const MainProject = () => {
                       <ProjectCard 
                           number="01"
                           title="독립기념관 리뉴얼"
-                          // content = "독립기념관을 리뉴얼 Ver.1"
                           skills="HTML, CSS, JS, JQuery"
                           imgUrl={project1}
                           date="3주"
@@ -94,14 +94,12 @@ const MainProject = () => {
                           aGithub = "https://github.com/naehyun25/project1"
                           aVisit = "https://naehyun25.github.io/project1/"
                           btnName="Visit"
-                          // aDesc = "https://www.naver.com"
                       />
                       <ProjectCard
                           number="02"
                           title="독립기념관 리뉴얼 (ver.PHP)"
-                          // content = "독립기념관 리뉴얼 PHP"
                           skills="HTML, CSS, JS, JQuery, PHP"
-                          imgUrl={project1}
+                          imgUrl={projectphp1}
                           date="1주"
                           contribution="100%"
                           page="메인페이지, 게시판페이지, 로그인페이지"
@@ -110,12 +108,10 @@ const MainProject = () => {
                           aGithub = "https://github.com/naehyun25/project1-ver2"
                           aVisit = "http://naeh.dothome.co.kr/index.php"
                           btnName="Visit"
-                          // aDesc = "https://www.naver.com"
                       />
                       <ProjectCard
                           number="03"
                           title="Team . ticatalk"
-                          // content = "팀프로젝트1. 티켓톡"
                           skills="HTML, CSS, JS, Scss, Bootstrap"
                           imgUrl={project2}
                           date="2주"
@@ -127,12 +123,10 @@ const MainProject = () => {
                           aGithub = "https://github.com/ejin1018/ticatalk"
                           aVisit = "https://ticatalk.vercel.app/"
                           btnName="Visit"
-                          // aDesc = "https://www.naver.com"
                       />
                       <ProjectCard
                           number="04"
                           title="Team. 4niture"
-                          // content = "팀프로젝트2. 가구쇼핑몰"
                           skills="React, CSSmodule, Antd, Node, Express, PWA"
                           imgUrl={project3}
                           date="3주"
@@ -145,12 +139,10 @@ const MainProject = () => {
                           aGithub = "https://github.com/hejo47/4niture_react"
                           aVisit = "https://4niture-react.vercel.app/"
                           btnName="Visit"
-                          // aDesc = "https://www.naver.com"
                           />
                       <ProjectCard 
                         number="05"
                         title="4niture App"
-                        // content = "가구쇼핑몰 어플"
                         skills="React-native-Expo, node.js"
                         imgUrl={project4Gif}
                         date="3일"
@@ -162,7 +154,6 @@ const MainProject = () => {
                         aGithub = "https://github.com/naehyun25/4niture-native-expo-app"
                         aVisit = "https://github.com/naehyun25/4niture-native-expo-app/tree/main/assets/apkqr.png"
                         btnName="Download"
-                        // aDesc = "https://www.naver.com"
                       />
                     </div>
                 </InnerWrap>
