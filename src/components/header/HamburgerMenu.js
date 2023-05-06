@@ -1,6 +1,6 @@
 import React,{useState,useRef} from "react";
 import './HamburgerMenu.css';
-
+import { Link } from "react-router-dom";
 
     
 const HamburgerMenu= ({appElement}) => {
@@ -62,7 +62,10 @@ const HamburgerMenu= ({appElement}) => {
                                 <p className="time">Contact Me,</p>
                             </div>
                             <div className="contacts">
+                                <Link to ="/test">
+
                                 <p className="contactTitle">Information</p>
+                                </Link>
                                 <p className="contactEmail">E-mail.&nbsp; naehyun25@gmail.com</p>
                                 <p className="contactNumber">HP.  &nbsp; 010 - 5800 - 2443</p>
                             </div>

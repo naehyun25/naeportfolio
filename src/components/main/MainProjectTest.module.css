@@ -1,0 +1,51 @@
+.mainProjectWrap{
+    margin: 0 auto;
+    padding: 140px 0 110px ;
+    background-color: #ecf2f6;
+    background-image: url("../../assets/background-pink-line.png");
+    background-repeat: no-repeat;
+    background-position-x:100%;
+    background-position-y:20%;
+    background-size: 50%;
+    height: 110rem;
+}
+h2{
+    border-top-color: linear-gradient(to right, rgba(89,86,233,0), rgba(89,86,233,1), rgba(89,86,233,0));
+    font-size: 2rem;
+    color:#c75c6f;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom:15px;
+}
+.subTitle{
+    color:#292930;
+    font-size: 5.6rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;
+    font-family: "pretendard", sans-serif;
+}
+.projecCardWrap{
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.individualCard{
+    position: absolute;
+    margin: 0 auto;
+    width: 82%;
+    left: 14%;
+    display: none;
+}
+.visual{
+    display: block;
+}
+.tabbtnwrap>ul{
+    display: flex;
+    justify-content: center;
+}
+.tabbtn{
+    padding:0 20px;
+    cursor: pointer;
+}

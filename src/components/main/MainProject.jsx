@@ -168,4 +168,4 @@ const MainProject = () => {
     )
 }
 
-export default MainProject;
+export {MainProject, ProjectCard};
