@@ -1,7 +1,7 @@
-# Project Name
+# "윤내현"의 포트폴리오
 > React - Personal Portfolio
 > 리액트로 제작한 윤내현의 포트폴리오입니다.
-> 구현화면보기 [_here_](https://naeportfolio.vercel.app/)
+- 구현화면보기 [_here_](https://naeportfolio.vercel.app/)
 
 
 ## 목차
