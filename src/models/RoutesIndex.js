@@ -11,7 +11,6 @@ const RoutesIndex = () => {
             <Route path="/" element={<MainPage/>}/>
             <Route path="/test" element={<MainProjectTest/>}/>
             <Route path="/projects" element={<ProjectPage/>}/>
-            <Route path="/Home" element={<MainIntro/>}></Route>
         </Routes>
     )
 };
