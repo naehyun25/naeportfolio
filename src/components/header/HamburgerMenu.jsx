@@ -1,7 +1,6 @@
 import React,{useState,useRef} from "react";
 import './HamburgerMenu.css';
-import { Link } from "react-router-dom";
-
+import { Link } from "react-scroll";
     
 const HamburgerMenu= ({appElement}) => {
     const [hover, setHover] = useState(false);
@@ -39,19 +38,19 @@ const HamburgerMenu= ({appElement}) => {
                         <hr/>
                         <div className="navMenus">
                             <p className="navMenu">
-                                <a href='#'onClick={closeBurger}>Home</a>
+                                <Link to="MainPage" spy={true} smooth={true} offset={-140} onClick={closeBurger}>Home</Link>
                             </p>
                             <p className="navMenu">
-                                <a href='#AboutMe'onClick={closeBurger}>About Me</a>
+                                <Link to="AboutMe" spy={true} smooth={true} onClick={closeBurger}>About Me</Link>
                             </p>
                             <p className="navMenu">
-                                <a href='#Skills'onClick={closeBurger}>Skills</a>
+                                <Link to="Skills" spy={true} smooth={true} offset={-96} onClick={closeBurger}>Skills</Link>
                             </p>
                             <p className="navMenu">
-                                <a href='#Project'onClick={closeBurger}>Projects</a>
+                                <Link to="Project" spy={true} smooth={true} onClick={closeBurger}>Projects</Link>
                             </p>
                             <p className="navMenu">
-                                <a href='#Contact'onClick={closeBurger}>Contact Me</a>
+                                <Link to="Contact" spy={true} smooth={true} onClick={closeBurger}>Contact Me</Link>
                             </p>
                         </div>
                         <hr/>

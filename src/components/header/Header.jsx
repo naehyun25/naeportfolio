@@ -1,5 +1,5 @@
 import React,{useRef, useState} from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-scroll";
 import styles from "./Header.module.css";
 import InnerWrap from "../../UI/InnerWrap";
 import HamburgerMenu from "./HamburgerMenu";
@@ -11,7 +11,7 @@ const Header=({appElement}) => {
         <header>
             <div className={styles.headerWrap}>
                 <div className={styles.logoWrap}>
-                    <Link to ="/">
+                    <Link to="MainPage" spy={true} smooth={true} offset={-140}>
                         <h1>
                             <Logo/>
                         </h1>
@@ -20,12 +20,11 @@ const Header=({appElement}) => {
                 <InnerWrap>
                         <nav>
                             <ul className={styles.navMenu}>
-                                <li><a href="#">Home</a></li>
-                                <li><a href='#AboutMe'>About Me</a></li>
-                                <li><a href='#Skills'>Skills</a></li>
-                                <li><a href='#Project'>Projects</a></li>
-                                {/* <li><Link to="./Projects">Projects</Link></li> */}
-                                <li><a href='#Contact'>Contact Me</a></li>
+                                <li><Link to="MainPage" spy={true} smooth={true} offset={-140}>Home</Link></li>
+                                <li><Link to="AboutMe" spy={true} smooth={true}>About Me</Link></li>
+                                <li><Link to="Skills" spy={true} smooth={true} offset={-96}>Skills</Link></li>
+                                <li><Link to="Project" spy={true} smooth={true}>Projects</Link></li>
+                                <li><Link to="Contact" spy={true} smooth={true}>Contact Me</Link></li>
                             </ul>
                         </nav>
                 </InnerWrap>

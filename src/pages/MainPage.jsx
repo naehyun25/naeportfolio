@@ -9,7 +9,7 @@ import MainStudy from "../components/main/MainStudy";
 const MainPage = () => {
     
     return(
-        <div className={styles.mainWrapper} >
+        <div className={styles.mainWrapper} id="MainPage" >
             <MainIntro/>
             <MainInfo/>
             <MainSkill/>
