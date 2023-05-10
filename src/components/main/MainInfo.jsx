@@ -48,10 +48,10 @@ const MainInfo = () => {
                 <div className={styles.MainIntroduction}>
                     <h2 className={styles.title}>About Me</h2>
                     
-                    <p className={styles.subTitle}>
+                    <div className={styles.subTitle}>
                         윤내현의 "윤내다"
                         <TextTransition className="title" delay={300} springConfig={presets.wobbly} >{TEXTS[index % TEXTS.length] }</TextTransition>
-                    </p>
+                    </div>
                 </div>
                 <div className={styles.infoBoxesWrap}>
                     <div className={`${styles.boxWrap} ${styles.boxInfo}`}>

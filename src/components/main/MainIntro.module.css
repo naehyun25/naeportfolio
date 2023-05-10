@@ -16,7 +16,7 @@ circle 1.2
     width: 54%;
     height: 54%;
     top: 54%;
-    left: -16%;
+    left: -14%;
     z-index:3;
 }
 .mainIntroWrap{
@@ -71,7 +71,7 @@ circle 1.2
     height: 100%;
 }
 .img3Dbottom{
-    z-index: 3;
+    z-index: 4;
     width: 34%;
     height: 40%;
     background: url("../../assets/banner-shape-2.png") no-repeat;

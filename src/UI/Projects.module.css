@@ -114,55 +114,65 @@
     display: flex;
     justify-content: center;
 }
-
-
-/* MainProject */
-.MainProjectWrap{
-    margin: 0 auto;
-    padding: 140px 0 110px ;
-    background-color: #ecf2f6;
-    background-image: url("../../assets/background-pink-line.png");
-    background-repeat: no-repeat;
-    background-position-x:100%;
-    background-position-y:20%;
-    background-size: 50%;
-}
-h2{
-    border-top-color: linear-gradient(to right, rgba(89,86,233,0), rgba(89,86,233,1), rgba(89,86,233,0));
-    font-size: 2rem;
-    color:#c75c6f;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    margin-bottom:15px;
-}
-.subTitle{
-    color:#292930;
-    font-size: 5.6rem;
-    font-weight: 500;
-    letter-spacing: -0.4px;
-    margin-bottom: 30px;
-    font-family: "pretendard", sans-serif;
+@media (max-width: 1200px) {
+    .projectCard{
+        margin-bottom:0 0.3% 4%;
+        height: 50%;
+        min-height: 613px;
     }
-.projectCardsWrap{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    .descWrap p{
+        padding: 0 4%;
+        text-align: center;
+    }
+    .descWrap {
+        top: 16%;
+    }
+    .btnWrap{
+        margin-top: 30px;
+    }
 }
 @media (max-width: 990px) {
-    .subTitle{
-        font-size: 4.6rem;
+    .projectTitle{
+        font-size: 2.4rem;
     }
-    .projectCardsWrap{
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
+    .projectContent{
+        font-size: 2.0rem;
+        
     }
-    .MainProjectWrap{
-        padding: 110px 0 110px ;
+    .projectDescWrap{
+        padding: 40px 38px 20px;
+    }
+    .projectCard{width: 70%;}
+}
+@media (max-width: 768px) {
+    .projectCard{
+        width: 76%;
+    }
+    .descWrap {
+        top: 12%;
     }
 }
 @media (max-width: 576px) {
-    .subTitle{
-        font-size: 3.6rem;
+    .descWrap p{
+        padding: 0 13%;
+    }
+    .projectImg{
+        width: 100%;
+        position: relative;
+        transition: all 5s;
+        min-height: 328px;
+    }
+    .descWrap{
+        top:1%
+    }
+    .btnWrap{
+        margin-top: 14px;
+    }
+    .projectCard{
+        min-height: 456px;
+        margin-bottom: 46px;
+    }
+    .projectImgCover{
+        height: 328px;
     }
 }

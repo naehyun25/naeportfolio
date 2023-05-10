@@ -63,7 +63,6 @@ const HamburgerMenu= ({appElement}) => {
                             </div>
                             <div className="contacts">
                                 <Link to ="/test">
-
                                 <p className="contactTitle">Information</p>
                                 </Link>
                                 <p className="contactEmail">E-mail.&nbsp; naehyun25@gmail.com</p>

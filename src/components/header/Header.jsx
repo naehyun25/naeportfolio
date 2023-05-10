@@ -11,7 +11,7 @@ const Header=({appElement}) => {
         <header>
             <div className={styles.headerWrap}>
                 <div className={styles.logoWrap}>
-                    <Link to ="/">
+                    <Link to ="#">
                         <h1>
                             <Logo/>
                         </h1>
@@ -20,7 +20,7 @@ const Header=({appElement}) => {
                 <InnerWrap>
                         <nav>
                             <ul className={styles.navMenu}>
-                                <li><a href='#'>Home</a></li>
+                                <li><Link to="/Home">Home</Link></li>
                                 <li><a href='#AboutMe'>About Me</a></li>
                                 <li><a href='#Skills'>Skills</a></li>
                                 <li><a href='#Project'>Projects</a></li>
