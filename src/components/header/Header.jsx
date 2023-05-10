@@ -24,6 +24,7 @@ const Header=({appElement}) => {
                                 <li><a href='#AboutMe'>About Me</a></li>
                                 <li><a href='#Skills'>Skills</a></li>
                                 <li><a href='#Project'>Projects</a></li>
+                                {/* <li><Link to="./Projects">Projects</Link></li> */}
                                 <li><a href='#Contact'>Contact Me</a></li>
                             </ul>
                         </nav>

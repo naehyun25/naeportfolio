@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useRef} from 'react' ;
+import { Link } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import RoutesIndex from './UI/RoutesIndex';
@@ -16,8 +17,8 @@ function App() {
   return (
     <div className="App" ref={hamburgerEffect}>
         <Header appElement={appElement}/>
-        <RoutesIndex />
-        <MainPage/>
+        <RoutesIndex >
+        </RoutesIndex >
         <Footer/>
     </div>
   );
