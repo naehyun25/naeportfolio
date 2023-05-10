@@ -59,12 +59,11 @@ span.shortbar{
     width: 58vw;
     visibility: visible;
     /* display: block; */
-
 }
 .contentWrap{display: none;}
 .layerOpen .contentWrap{
     padding: 100px;
-     display: block;
+    display: block;
 }
 .layerOpen .closebtn{
     width: 20px;
