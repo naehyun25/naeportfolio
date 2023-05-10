@@ -29,7 +29,7 @@ const Footer =() => {
                             <div className={styles.replaybtn}>
                                 <ButtonBlue
                                     name="Replay"
-                                    link='#'
+                                    link='https://naeportfolio.vercel.app/'
                                     src={replay}
                                     font="fontEnglish"
                                 />
