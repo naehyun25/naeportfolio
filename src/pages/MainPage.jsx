@@ -10,11 +10,11 @@ const MainPage = () => {
     
     return(
         <div className={styles.mainWrapper} >
-            <div className="sectionOne"><MainIntro/></div>
-            <div className="sectionTwo"><MainInfo/></div>
-            <div className="sectionFour"><MainSkill/></div>
-            <div className="sectionFive"><MainStudy/></div>
-            <div className="sectionThree"><MainProject/></div>
+            <MainIntro/>
+            <MainInfo/>
+            <MainSkill/>
+            <MainStudy/>
+            <MainProject/>
         </div>
     )
 };
