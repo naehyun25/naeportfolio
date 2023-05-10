@@ -52,11 +52,6 @@ const MainInfo = () => {
                         윤내현의 "윤내다"
                         <TextTransition className="title" delay={300} springConfig={presets.wobbly} >{TEXTS[index % TEXTS.length] }</TextTransition>
                     </p>
-                        {/* <br/>
-                        매끈한 소통능력과 눈부신 코딩실력으로
-                        <br/>
-                        회사의 빛이 되겠습니다. */}
-                    
                 </div>
                 <div className={styles.infoBoxesWrap}>
                     <div className={`${styles.boxWrap} ${styles.boxInfo}`}>
