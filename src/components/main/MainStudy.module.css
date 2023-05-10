@@ -70,6 +70,12 @@
     transform: scale(1.1);
     border-radius: 30px;
 }
+.studyContent:hover .contentTitle, .direct{
+    color: #2522ba;
+}
+.studyContent:hover .direct{
+    color: #2522ba;
+}
 .errorContent{
     width: 50%;
     display: flex;
@@ -85,6 +91,12 @@
 .errorContent:hover img{
     transform: scale(1.1);
     border-radius: 30px;
+}
+.errorContent:hover .contentTitle, .direct{
+    color: #2522ba;
+}
+.errorContent:hover .direct{
+    color: #2522ba;
 }
 .imgWrap{
     width:40%;
@@ -110,9 +122,6 @@
     color:#292930;
     margin-top: 0;
 }
-.contentTitle:hover{
-    color: #2522ba;
-}
 .contentSubTitle{
     color:#999fae;
     margin-bottom: 30px;
@@ -121,9 +130,7 @@
     color:#292930;
     font-weight: 500;
 }
-.direct:hover{
-    color:#2522ba;
-}
+
 @media (max-width: 990px) {
     .subTitle{
         font-size: 4.6rem;
