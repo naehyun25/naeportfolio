@@ -13,14 +13,16 @@ import vscodeIcon from "../../assets/vscode-icon.png";
 import googleIcon from "../../assets/googledocs-icon.png";
 import figmaIcon from "../../assets/figma-icon.png";
 import viewIcon from "../../assets/view-icon.png";
+import flutterIcon from "../../assets/flutter-icon.png";
 
 const MainSkill = () => {
     const skills = [
         { type: 'HTML', level: 90 },
-        { type: 'CSS', level: 80 },
-        { type: 'JavaScript', level: 70 },
+        { type: 'CSS', level: 85 },
+        { type: 'JavaScript', level: 90 },
         { type: 'jQuery', level: 70 },
-        { type: 'React', level: 70 },
+        { type: 'React', level: 80 },
+        { type: 'Flutter', level: 90 },
       ];
       const colors = {
         bar: '#fffaaa',
@@ -48,6 +50,7 @@ const MainSkill = () => {
                     <div className={styles.skillIcon}><img src={figmaIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={vscodeIcon} alt=""/></div>
                     <div className={styles.skillIcon}><img src={googleIcon} alt=""/></div>
+                    <div className={styles.skillIcon}><img src={flutterIcon} alt=""/></div>
                 </div>
 
 

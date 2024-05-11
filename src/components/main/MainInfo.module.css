@@ -83,10 +83,11 @@
     top: -14%;
     left: -10%;
 }
-.circlePurple{
+.circleExtraPurple{
     top: -12%;
-    left: -10%;
+    right: 10%;
 }
+
 /* z-index 
 btn, img, text 0
 circle -1
@@ -119,7 +120,7 @@ circle -1
         margin-top:60px;    
     }
     .historyPadding{
-        padding:0 56px 0 30px;
+        padding:0 30px 0 20px;
     }
     .eduPadding{
         padding:0 18px 0 2px;

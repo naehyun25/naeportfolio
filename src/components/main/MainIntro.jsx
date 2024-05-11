@@ -41,14 +41,15 @@ const MainIntro = () => {
             <div className={styles.mainBanner}>
                 <div className={styles.bannerDesc}>
                     <div>
-                        <p><span>윤</span>나는 코드를 만드는<br/><span>윤내현</span>입니다.</p>
+                    <p className={styles.addText}>코드에 <span>협력</span>의 가치를 더해, <br/>회사의 <span>니즈</span>를 읽어내는</p>
+                    <p>팀 플레이어<br className={styles.moOnly}/><span> 윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
                         <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" link="https://github.com/naehyun25"/>
                         <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}
                         font="fontEnglish" link="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388"/>
                         <ButtonWhite name="Resume" src={resume} srcWhite={resumeWhite}
-                        font="fontEnglish" link="https://drive.google.com/file/d/1Ss_QfNIaVoCXQ8CghaOtUFckhfvaZUl-/view?usp=sharing"/>
+                        font="fontEnglish" link="https://drive.google.com/file/d/1gjdeaaQ27tT1d4exzNB64xxnrwLwkw87/view"/>
                     </div>
                 </div>
                 

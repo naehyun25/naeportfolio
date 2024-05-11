@@ -8,7 +8,7 @@ import circlePink from "../../assets/circle-pink.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; 
 import TextTransition, { presets } from 'react-text-transition';
-const TEXTS = [ '| 광택나게 만들다.', '| 코드를 광택나게 갈고 닦다.','| 매끈한 소통능력이 있다.'];
+const TEXTS = [ '|코딩하는 개발자이자 협력의 가치를 아는 회사원', '| 매끈한 소통능력을 갖춘 팀 플레이어','| 끊임없이 발전하는 프론트엔드 개발자'];
 
 gsap.registerPlugin(ScrollTrigger); 
 const MainInfo = () => {
@@ -27,7 +27,7 @@ const MainInfo = () => {
             const circles = self.selector(".circle");
             circles.forEach((circle)=>{
                 gsap.to(circle,5,{
-                    x:300,
+                    x:250,
                     scale:1,
                     rotate:360,
                     scrollTrigger: {
@@ -35,6 +35,7 @@ const MainInfo = () => {
                         start: 'bottom right',
                         end: 0,
                         scrub: true,
+                        // markers:true,
                       },
                 })
             });
@@ -88,17 +89,20 @@ const MainInfo = () => {
                             <div className={styles.historyPadding}>
                             <p className={styles.date}>2008.03 ~ 2012.08</p>
                                 <p>충북대학교 축산학과 졸업</p>
-                                <p>교육학 복수전공</p>
                             </div>
                             <div className={styles.historyPadding}>
                             <p className={styles.date}>2014.09 ~ 2022.07 (7년 11개월)</p>
                                 <p>(주) 태성트레이딩 근무</p>
                             </div>
+                            <div className={styles.historyPadding}>
+                            <p className={styles.date}>2023.05 ~ 2024.04 (11개월)</p>
+                                <p>봄바람 근무</p>
+                            </div>
                         </div>
                     </div>
                     <div className={`${styles.boxWrap} ${styles.boxEducation}`}>
                         <img src={circlePurple} alt="" 
-                        className={`${styles.circlePurple} circle`}
+                        className={`${styles.circleExtraPurple} circleE`}
                         />
                         <p className={styles.boxTitle}>
                             Education

@@ -18,8 +18,13 @@ const ButtonWhite = (props) => {
 };
 
 const ButtonWhiteSmall = (props) => {
-    const [hover, setHover]= useState(false);
 
+    
+
+    const [hover, setHover]= useState(false);
+    if(props.link === 'flutter'){
+        return (<></>)
+    }else
     return(
         <button className={styles.btnWhiteSmall} 
         onMouseOver={()=>{setHover(true)}}

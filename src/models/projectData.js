@@ -19,23 +19,23 @@ const projectData = [
         aVisit : "https://naehyun25.github.io/project1/",
         btnName:"Visit"
     },
+    // {
+    //     number:"02",
+    //     title:"PHP게시판 프로젝트",
+    //     content:"독립기념관 리뉴얼 (ver.PHP)",
+    //     skills:"PHP, JS, JQuery, HTML, CSS ",
+    //     imgUrl:`${projectphp1}`,
+    //     date:"1주",
+    //     contribution:"100%",
+    //     page:"메인페이지, 게시판페이지, 로그인페이지",
+    //     tech : "PHP게시판(CRUD), PHP로그인구현",
+    //     deploy : "Dothome",
+    //     aGithub: "https://github.com/naehyun25/project1-ver2",
+    //     aVisit: "http://naeh.dothome.co.kr/index_board.php",
+    //     btnName:"Visit"
+    // },
     {
         number:"02",
-        title:"PHP게시판 프로젝트",
-        content:"독립기념관 리뉴얼 (ver.PHP)",
-        skills:"PHP, JS, JQuery, HTML, CSS ",
-        imgUrl:`${projectphp1}`,
-        date:"1주",
-        contribution:"100%",
-        page:"메인페이지, 게시판페이지, 로그인페이지",
-        tech : "PHP게시판(CRUD), PHP로그인구현",
-        deploy : "Dothome",
-        aGithub: "https://github.com/naehyun25/project1-ver2",
-        aVisit: "http://naeh.dothome.co.kr/index_board.php",
-        btnName:"Visit"
-    },
-    {
-        number:"03",
         title:"부트스트랩 SCSS 프로젝트",
         content:"Team . ticatalk",
         skills:"Scss, Bootstrap, JS, HTML, CSS",
@@ -50,7 +50,7 @@ const projectData = [
         btnName:"Visit"
     },
     {
-        number:"04",
+        number:"03",
         title:"리액트 프로젝트",
         content:"Team . 4niture",
         skills:"React, CSSmodule, Antd, Node, Express, PWA",
@@ -65,7 +65,7 @@ const projectData = [
         btnName:"Visit"
     },
     {
-        number:"05",
+        number:"04",
         title:"리액트 네이티브 프로젝트",
         content:"4niture App",
         skills:"React-native-Expo, node.js",
@@ -77,6 +77,21 @@ const projectData = [
         deploy : "CloudType, Apk",
         aGithub : "https://github.com/naehyun25/4niture-native-expo-app",
         aVisit : "https://github.com/naehyun25/4niture-native-expo-app/tree/main/assets/apkqr.png",
+        btnName:"Download"
+    },
+    {
+        number:"05",
+        title:"플러터 앱 프로젝트",
+        content:"Flutter App",
+        skills:"Flutter, node.js",
+        imgUrl:`${project4Gif}`,
+        date:"5개월",
+        contribution:"90%",
+        page:"프론트페이지 및 node 백엔드 추가개발",
+        tech : "Flutter 앱 전체페이지 구현, 모바일 push 알림, node.js 를 이용한 백엔드 구현",
+        deploy : "PlayStore, AppStore",
+        aGithub : "flutter",
+        aVisit : "https://play.google.com/store/apps/details?id=com.helfu",
         btnName:"Download"
     }
 ]
