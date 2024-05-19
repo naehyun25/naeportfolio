@@ -3,6 +3,8 @@ import projectphp1 from "../assets/projectphp1.gif";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
 import project4Gif from "../assets/project4.gif";
+import project5Gif from "../assets/project5.gif";
+import project5 from "../assets/project5.png";
 const projectData = [
     {
         number:"01",
@@ -84,7 +86,7 @@ const projectData = [
         title:"플러터 앱 프로젝트",
         content:"Flutter App",
         skills:"Flutter, node.js",
-        imgUrl:`${project4Gif}`,
+        imgUrl:`${project5}`,
         date:"5개월",
         contribution:"90%",
         page:"프론트페이지 및 node 백엔드 추가개발",
