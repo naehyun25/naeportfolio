@@ -31,7 +31,7 @@ const MainStudy=()=>{
                                 기억하기 위해 기록하고 있습니다.<br/>
                                 매일 복습하고 변형해가며 나의 것으로 익혔습니다.
                             </p>
-                            <Link to='https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388' 
+                            <Link to="https://incongruous-halloumi-7db.notion.site/37329b542a8c491f8d72115d06911998?v=266ca72596dc4a4494dd9219658b0d36&pvs=4" 
                             className={styles.direct} target="_blank">공부노트보러가기 &gt;</Link>
                         </div>
 
