@@ -45,11 +45,11 @@ const MainIntro = () => {
                     <p>팀 플레이어<br className={styles.moOnly}/><span> 윤내현</span>입니다.</p>
                     </div>
                     <div className={styles.btns}>
-                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" link="https://github.com/naehyun25"/>
+                        <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" link="https://github.com/naehyun25" />
                         <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}
-                        font="fontEnglish" link="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388"/>
+                        font="fontEnglish" link="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388&pvs=4" />
                         <ButtonWhite name="Resume" src={resume} srcWhite={resumeWhite}
-                        font="fontEnglish" link="https://drive.google.com/file/d/1gjdeaaQ27tT1d4exzNB64xxnrwLwkw87/view"/>
+                        font="fontEnglish" link="https://drive.google.com/file/d/1UDFjTTWWswjdh-HSyVRLgSWNdgeUIhnN/view" />
                     </div>
                 </div>
                 
