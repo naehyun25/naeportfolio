@@ -33,15 +33,15 @@ const ProjectCard = ({ title,content, imgUrl, number, skills, date, contribution
         <div className={styles.projectImgWrap}>
           <div className={styles.imgCover} ref={imgCover} style={{opacity:visual, transition:"all 0.5s"}}></div>
           <div className={styles.descWrap}>
-            <p><span className={styles.descTitle}>제작기간  </span> {date} </p>
-            <p><span className={styles.descTitle}>본인기여도  </span> {contribution}</p>
-            <p><span className={styles.descTitle}>페이지</span><br />
+            <p><span className={styles.descTitle}>Date  </span> {date} </p>
+            <p><span className={styles.descTitle}>Contribution  </span> {contribution}</p>
+            <p><span className={styles.descTitle}>Page</span><br />
               {page}
             </p>
-            <p><span className={styles.descTitle}>Features</span><br />
+            <p><span className={styles.descTitle}>Tech</span><br />
               {tech}
             </p>
-            <p><span className={styles.descTitle}>배포</span> {deploy}</p>
+            <p><span className={styles.descTitle}>Deploy</span> {deploy}</p>
             <div className={styles.btnWrap}>
               <ButtonWhiteSmall name="Github" font="fontEnglish" src={github} srcWhite={githubWhite} link={aGithub}/>
               <ButtonWhiteSmall name={btnName} font="fontEnglish" src={deployIcon} srcWhite={deployWhite} link={aVisit} />

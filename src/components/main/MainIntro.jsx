@@ -41,9 +41,11 @@ const MainIntro = () => {
             <div className={styles.mainBanner}>
                 <div className={styles.bannerDesc}>
                     <div>
-                    <p className={styles.addText}>코드에 <span>협력</span>의 가치를 더해, <br/>회사의 <span>니즈</span>를 읽어내는</p>
-                    <p>팀 플레이어<br className={styles.moOnly}/><span> 윤내현</span>입니다.</p>
+                    <p className={styles.addText}> I’m Naehyeon Yoon, <br /> <span>Your team player</span></p>
+                    <p className={styles.addText}>Crafting code with <span>Teamwork</span> <br/>Decoding company <span>Needs</span> </p>
+                    
                     </div>
+                    
                     <div className={styles.btns}>
                         <ButtonWhite name="Git Hub" src={github} srcWhite={githubWhite} font="fontEnglish" link="https://github.com/naehyun25" />
                         <ButtonWhite name="Notion" src={notion} srcWhite={notionWhite}

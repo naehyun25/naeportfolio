@@ -10,7 +10,7 @@ const MainProject = () => {
             <div id="Project" className={styles.MainProjectWrap}>
                 <InnerWrap>
                     <h2>Project</h2>
-                    <p className={styles.subTitle}>작업한 프로젝트</p>
+                    <p className={styles.subTitle}>Projects I've Worked On</p>
                     <div className={styles.projectCardsWrap} >
                     {
                         projectData.map((project, idx)=>{
