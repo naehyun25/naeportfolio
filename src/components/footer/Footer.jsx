@@ -37,7 +37,7 @@ const Footer =() => {
                         </div>
                         <p><Link to ="https://github.com/naehyun25" className={styles.redirect} target='_blank'>Go to GitHub</Link></p>
                         <p><Link to ="https://incongruous-halloumi-7db.notion.site/58d740b724c042fd9f89607bc596175f?v=1df68651616343e2a1bb61cf43693388&pvs=4" className={styles.redirect} target='_blank'>Go to Notion</Link></p>
-                        <p><Link to ="https://drive.google.com/file/d/1UDFjTTWWswjdh-HSyVRLgSWNdgeUIhnN/view" className={styles.redirect}target='_blank' >Go to Resume</Link></p>
+                        <p><Link to ="https://incongruous-halloumi-7db.notion.site/Nae-Hyeon-Yoon-1911c6f0f09f8044995cd4663a5968e5?pvs=4" className={styles.redirect}target='_blank' >Go to Resume</Link></p>
                     </div>
                 </div>
             <div className={styles.FooterBottom}>@ 2023. All rights reserved by naehyun25</div>
